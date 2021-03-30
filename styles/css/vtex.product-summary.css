@@ -1,0 +1,306 @@
+.container--summaryComplete {
+  position: relative;
+  max-width: 240px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.containerNormal--minimumSummary {
+  padding: 0 0.5rem;
+}
+
+.container--summaryComplete:hover {
+  border-color: #dee7ef;
+}
+
+.container--summaryComplete:hover
+  :global(.vtex-product-comparison-0-x-productSelectorContainer),
+.container--summaryComplete:hover .buyButtonContainer,
+.container--summaryComplete:hover
+  :global(.vtex-flex-layout-0-x-flexRow--product-summary-buy-button),
+.container--summaryComplete:hover
+  :global(.vtex-wish-list-1-x-wishlistIconContainer),
+.container--summaryComplete:hover
+  :global(.vtex-modal-layout-0-x-triggerContainer) {
+  opacity: 1;
+}
+
+.container--summaryComplete
+  :global(.vtex-store-components-3-x-installmentsPrice) {
+  display: none;
+}
+
+.container--summaryComplete .buyButton :global(.vtex-button),
+.container--summaryComplete
+  :global(.vtex-flex-layout-0-x-flexRow--product-summary-buy-button)
+  :global(.vtex-button) {
+  border: none;
+  background-color: #ff5f00;
+  height: 48px;
+  border-radius: 4px;
+}
+
+.priceContainer {
+  align-items: flex-start;
+}
+
+.nameWrapper,
+.price_sellingPriceContainer,
+.price_listPriceContainer {
+  text-align: left;
+  padding-bottom: 0;
+  margin-bottom: 4px;
+}
+
+.price_sellingPriceLabel,
+.element--minimumSummary .price_listPriceContainer,
+.element--minimumSummary .price_installmentContainer {
+  display: none;
+  overflow: 0;
+  visibility: hidden;
+}
+
+.container--summaryComplete .price_listPrice,
+.container--summaryComplete .price_sellingPrice {
+  padding: 0;
+}
+
+.container--summaryComplete .productBrandContainer {
+  font-size: 14px;
+  color: #0067c7;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+}
+
+.container--summaryComplete .nameContainer {
+  padding: 0;
+}
+
+.container--summaryComplete .productNameContainer {
+  text-align: left;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000;
+  width: 100%;
+  margin-bottom: 16px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.container--summaryComplete .buyButtonContainer,
+.container--summaryComplete
+  :global(.vtex-flex-layout-0-x-flexRow--product-summary-buy-button) {
+  margin-top: auto;
+  margin-bottom: 16px;
+  padding: 0;
+}
+
+.container--summaryComplete .image {
+  margin-bottom: 16px;
+  width: 196px;
+  height: 196px;
+  object-fit: contain;
+}
+
+.element--summaryComplete {
+  padding: 0;
+}
+
+.element--summaryComplete .priceContainer {
+  align-items: flex-start;
+  padding: 0;
+}
+
+.element--summaryComplete .buyButtonContainer,
+.element--summaryComplete
+  :global(.vtex-flex-layout-0-x-flexRow--product-summary-buy-button) {
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.element--summaryComplete .productPriceClass {
+  flex-flow: column-reverse;
+}
+
+.element--summaryComplete .listPriceLabel,
+.element--summaryComplete .sellingPriceLabel {
+  display: none;
+}
+
+.element--summaryComplete .listPriceValue .currencyContainer {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  font-family: Roboto;
+  color: #717786;
+}
+
+.currencyCode {
+  margin-right: 4px;
+}
+
+/* BEGIN - Trending Shelg */
+
+.column--summaryCol {
+  flex-flow: column nowrap;
+  align-items: flex-start;
+}
+
+.element--trendingSummary
+  :global(.vtex-reviews-and-ratings-1-x-inlineContainer) {
+  margin: 0;
+}
+
+.element--trendingSummary :global(.vtex-flex-layout-0-x-flexRowContent) {
+  align-items: center;
+}
+
+.element--trendingSummary .imageStackContainer {
+  margin-right: 24px;
+}
+
+.container--trendingSummary {
+  max-width: 100% !important;
+  width: 100%;
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px 24px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.container--trendingSummary:hover {
+  border: 1px solid var(--fresh-blue);
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
+}
+
+.element--trendingSummary {
+  justify-content: center;
+  padding: 0;
+}
+
+.element--trendingSummary .price_installmentContainer,
+.element--trendingSummary .listPriceContainer {
+  display: none;
+}
+
+.element--trendingSummary .image {
+  width: 96px !important;
+  height: 96px;
+  object-fit: cover;
+}
+
+.element--trendingSummary .nameContainer {
+  padding: 0;
+  margin-bottom: 8px;
+}
+
+.element--trendingSummary .productBrand {
+  font-weight: 700;
+  text-align: left;
+  color: #000;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.element--trendingSummary .price_sellingPrice,
+.element--trendingSummary .price_sellingPriceContainer,
+.element--trendingSummary .priceContainer {
+  padding: 0;
+}
+
+/* END - Trending Shelg */
+/* BEGIN - Popular Shelf */
+
+.container--minimumSummary .image {
+  width: 192px;
+  height: 192px;
+  object-fit: contain;
+}
+
+/* END - Popular Shelf */
+
+.column--drawer-summary-col2 {
+  align-items: flex-start;
+}
+
+.element--comparison-page-summary .buyButton :global(.vtex-button),
+.element--comparison-page-summary
+  :global(.vtex-flex-layout-0-x-flexRow--product-summary-buy-button)
+  :global(.vtex-button) {
+  border: none;
+  height: 48px;
+  background: #ff5f00;
+}
+
+.element--comparison-page-summary .sellingPrice,
+.element--comparison-page-summary .buyButtonContainer,
+.element--comparison-page-summary
+  :global(.vtex-flex-layout-0-x-flexRow--product-summary-buy-button) {
+  padding: 0;
+}
+
+/* BEGIN - Search Bar Summary */
+
+.element--summarySearch .imageContainer {
+  margin-bottom: 8px;
+  width: auto;
+  margin-right: auto;
+  margin-left: initial;
+}
+
+.element--summarySearch .productBrandContainer {
+  text-align: left;
+}
+
+.element--summarySearch .productBrandContainer .productBrandName {
+  font-size: 14px;
+  color: #0067c7;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 4px;
+}
+
+.element--summarySearch .nameContainer {
+  padding: 0;
+  justify-content: flex-start;
+}
+
+.element--summarySearch .nameContainer .productBrand {
+  font-size: 12px;
+  line-height: 18px;
+  color: #000;
+}
+
+/* END - Search Bar Summary */
+
+@media (max-width: 64rem) {
+  .container--summaryComplete {
+    padding: 8px;
+  }
+
+  .container--summaryComplete {
+    min-width: 144px !important;
+    max-width: 100% !important;
+  }
+
+  .element--minimumSummary
+    :global(.vtex-reviews-and-ratings-1-x-inlineContainer) {
+    margin: 0;
+  }
+
+  .element--minimumSummary .priceContainer {
+    align-items: flex-start;
+  }
+
+  .element--summaryComplete .price_sellingPrice {
+    font-size: 20px;
+    color: #000;
+    line-height: 24px;
+    font-weight: 500;
+  }
+}

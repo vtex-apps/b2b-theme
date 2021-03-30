@@ -1,0 +1,55 @@
+.quantitySelectorContainer--desktop {
+  margin: 0;
+}
+
+.quantitySelectorContainer--desktop :global(.vtex-numeric-stepper__input),
+.quantitySelectorContainer--desktop :global(.vtex-numeric-stepper__plus-button),
+.quantitySelectorContainer--desktop
+  :global(.vtex-numeric-stepper__minus-button) {
+  border-width: 1px;
+  outline: none;
+}
+
+.quantitySelectorContainer--desktop
+  :global(.vtex-numeric-stepper__plus-button) {
+  border-left: 0;
+}
+
+.quantitySelectorContainer--desktop
+  :global(.vtex-numeric-stepper__minus-button) {
+  border-right: 0;
+}
+
+.quantitySelectorContainer :global(.vtex-input-prefix__group),
+.quantitySelectorContainer :global(.vtex-dropdown__container) {
+  border-width: 1px;
+  border-color: var(--lines-darker);
+  height: 3rem;
+}
+
+.quantitySelectorContainer :global(.vtex-dropdown__container),
+.quantitySelectorContainer :global(.vtex-input-prefix__group) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quantitySelectorContainer :global(.vtex-dropdown__button),
+.quantitySelectorContainer :global(.vtex-styleguide-9-x-input) {
+  color: var(--black-dark);
+  font-weight: 500;
+  font-size: 1rem;
+  padding-left: 0;
+}
+
+.quantitySelectorContainer :global(.vtex-dropdown__container)::before,
+.quantitySelectorContainer :global(.vtex-input-prefix__group)::before {
+  color: var(--black-medium);
+  display: inline-block;
+  content: "Qty:\00a0";
+  padding-left: 1rem;
+}
+
+.quantitySelectorContainer :global(.vtex-dropdown__arrow) {
+  color: var(--lines-darker);
+}

@@ -1,0 +1,57 @@
+{
+  "flex-layout.col#right-col": {
+    "children": [
+      "flex-layout.row#brand-and-rating",
+      "flex-layout.row#product-name",
+      "flex-layout.row#product-identifier",
+      "condition-layout.product#sku-selector-or-list",
+      "flex-layout.row#assembly-options"
+      // "flex-layout.row#link-seller"
+    ],
+    "props": {
+      "blockClass": "right-col",
+      "preventVerticalStretch": true,
+      "width": "45%"
+    }
+  },
+  "flex-layout.row#brand-and-rating": {
+    "children": [
+      "vtex.store-components:product-brand#brand-and-rating",
+      "flex-layout.col#spacer",
+      "product-rating-summary"
+    ],
+    "props": {
+      "blockClass": ["items-center", "brand-and-rating"],
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "colSizing": "auto",
+      "colGap": 0
+    }
+  },
+  "vtex.store-components:product-brand#brand-and-rating": {
+    "props": {
+      "blockClass": "brand-and-rating",
+      "displayMode": "text",
+      "height": 0,
+      "logoWithLink": true
+    }
+  },
+  "flex-layout.row#product-name": {
+    "children": ["vtex.store-components:product-name#product-page"],
+    "props": {
+      "blockClass": ["product-name"]
+    }
+  },
+  "vtex.store-components:product-name#product-page": {
+    "props": {
+      "blockClass": "product-page"
+    }
+  },
+  "flex-layout.row#product-identifier": {
+    "children": ["product-identifier.product"],
+    "props": {
+      "blockClass": ["product-identifier"]
+    }
+  }
+}

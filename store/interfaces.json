@@ -1,0 +1,11 @@
+{
+  "store.search.product-comparison": {
+    "around": ["comparison-context-wrapper"]
+  },
+  "store.custom.product-comparison": {
+    "around": ["comparison-context-wrapper"]
+  },
+  "search-result-layout.desktop.product-comparison": {
+    "allowed": ["product-comparison-drawer"]
+  }
+}

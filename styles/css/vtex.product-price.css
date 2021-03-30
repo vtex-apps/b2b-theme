@@ -1,0 +1,90 @@
+.sellingPrice--desktop {
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 32px;
+  color: #000000;
+}
+
+.sellingPrice .sellingPriceValue--desktop {
+  display: none;
+}
+
+.sellingPriceWithTax--desktop {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.listPrice--desktop {
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration-line: line-through;
+  color: #717786;
+}
+
+.savings--desktop {
+  font-size: 14px;
+  line-height: 20px;
+  color: #717786;
+}
+
+.savingsValue--desktop {
+  color: #468a2e;
+  font-weight: 500;
+}
+
+.savings--savingSummary {
+  display: block;
+  background: #e5f1e1;
+  color: #468a2e;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+  padding: 0px 8px;
+  border-radius: 10px;
+}
+
+.savings--savingPercentage {
+  display: block;
+  background: var(--fresh-orange);
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 700;
+  padding: 0px 8px;
+  border-radius: 10px;
+}
+
+.savings--savingPercent {
+  margin-left: 4px;
+  color: #468a2e;
+  font-weight: 500;
+}
+
+@media (max-width: 64rem) {
+  .savings--savingPercent {
+    color: #000;
+  }
+
+  .currencyContainer--sticky {
+    font-size: 20px;
+    line-height: 28px;
+    color: #000;
+    font-weight: bold;
+    font-family: Roboto;
+  }
+}
+
+/* Seller Name */
+
+.sellerNameContainer--default {
+  font-size: 0.875rem;
+  color: var(--black-medium);
+  margin-bottom: 0.5rem;
+}
+
+.sellerName--default {
+  color: var(--black-dark);
+  font-weight: 500;
+}

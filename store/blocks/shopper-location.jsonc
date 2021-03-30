@@ -1,0 +1,38 @@
+{
+  "shopper-location": {
+    "children": ["modal-trigger#address"]
+  },
+  "modal-trigger#address": {
+    "children": ["user-address", "modal-layout#address"]
+  },
+  "user-address": {
+    "props": {
+      "variation": "bar",
+      "showStreet": false,
+      "showCityAndState": true,
+      "showPostalCode": true,
+      "showPrefix": false,
+      "showIfEmpty": true
+    }
+  },
+  "modal-layout#address": {
+    "children": ["modal-header#address", "modal-content#address"]
+  },
+  "modal-header#address": {
+    "children": ["flex-layout.col#address-header"]
+  },
+  "flex-layout.col#address-header": {
+    "children": ["rich-text#address-header"],
+    "props": {
+      "paddingLeft": 5
+    }
+  },
+  "rich-text#address-header": {
+    "props": {
+      "text": "### Change Location"
+    }
+  },
+  "modal-content#address": {
+    "children": ["change-location"]
+  }
+}

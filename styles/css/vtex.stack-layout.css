@@ -1,0 +1,10 @@
+.stackItem--savingsStack:not(.stackItem--first),
+.stackItem--savingsStack:not(:last-child) {
+  bottom: 10px;
+  top: initial;
+}
+
+.stackItem--savingsStack:last-child {
+  bottom: 28px;
+  top: initial;
+}

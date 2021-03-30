@@ -1,0 +1,172 @@
+{
+  "vtex.menu@2.x:menu#about": {
+    "props": {
+      "blockClass": "flexCol",
+      "items": [
+        {
+          "id": "footerItem-company",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/company",
+            "noFollow": false,
+            "tagTitle": "Shop",
+            "text": "Our Company"
+          }
+        },
+        {
+          "id": "footerItem-careers",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/careers",
+            "noFollow": false,
+            "tagTitle": "about-us",
+            "text": "Careers"
+          }
+        },
+        {
+          "id": "footerItem-sell",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/sell",
+            "noFollow": false,
+            "tagTitle": "about-us",
+            "text": "Sell with VTEX"
+          }
+        },
+        {
+          "id": "footerItem-investor",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/investors",
+            "noFollow": false,
+            "tagTitle": "about-us",
+            "text": "Investor Relations"
+          }
+        },
+        {
+          "id": "footerItem-advertise",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/advertise",
+            "noFollow": false,
+            "tagTitle": "about-us",
+            "text": "Advertise with us"
+          }
+        },
+        {
+          "id": "footerItem-locations",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/locations",
+            "noFollow": false,
+            "tagTitle": "about-us",
+            "text": "Locations"
+          }
+        }
+      ]
+    }
+  },
+  "vtex.menu@2.x:menu#costumer": {
+    "props": {
+      "blockClass": "flexCol",
+      "items": [
+        {
+          "id": "footerItem-help",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/help-center",
+            "noFollow": false,
+            "tagTitle": "Help Center",
+            "text": "Help Center"
+          }
+        },
+        {
+          "id": "footerItem-returns",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/returns",
+            "noFollow": false,
+            "tagTitle": "Returns",
+            "text": "Returns"
+          }
+        },
+        {
+          "id": "footerItem-recall",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/recalls",
+            "noFollow": false,
+            "tagTitle": "Product Recalls",
+            "text": "Product Recalls"
+          }
+        },
+        {
+          "id": "footerItem-accessibility",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/accessibility",
+            "noFollow": false,
+            "tagTitle": "Accessibility",
+            "text": "Accessibility"
+          }
+        },
+        {
+          "id": "footerItem-contact",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/contact",
+            "noFollow": false,
+            "tagTitle": "Contact Us",
+            "text": "Contact Us"
+          }
+        },
+        {
+          "id": "footerItem-pickup",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/pickup",
+            "noFollow": false,
+            "tagTitle": "Store Pickup",
+            "text": "Store Pickup"
+          }
+        }
+      ]
+    }
+  }
+}

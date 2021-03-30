@@ -1,0 +1,44 @@
+.homeLink--default {
+  display: flex;
+  align-items: center;
+  padding-top: 0;
+  padding-left: 0;
+  padding-bottom: 0;
+}
+
+.container--default {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.arrow--default {
+  display: flex;
+  align-items: center;
+}
+
+.arrow--default,
+.caretIcon--default,
+.link--default,
+.term--default {
+  color: var(--black-medium);
+  font-size: 0.875rem;
+  white-space: nowrap;
+}
+
+.arrow--default,
+.caretIcon--default {
+  padding-left: 0;
+  padding-right: 0.5rem;
+}
+
+.link--default,
+.termArrow--default,
+.term--default {
+  padding: 0;
+}
+
+.homeLink--default {
+  padding-right: 0.5rem;
+}

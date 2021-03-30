@@ -1,0 +1,112 @@
+{
+  "flex-layout.row#features": {
+    "children": ["flex-layout.col#features"],
+    "props": {
+      "blockClass": "specification"
+    }
+  },
+
+  "flex-layout.col#features": {
+    "children": ["disclosure-layout#features", "flex-layout.col#divider"],
+    "props": {
+      "blockClass": "specification",
+      "width": "74%"
+    }
+  },
+
+  "disclosure-layout#features": {
+    "children": ["disclosure-trigger#features", "disclosure-content#features"],
+    "props": {
+      "initialVisibility": "visible"
+    }
+  },
+
+  "disclosure-trigger#features": {
+    "children": ["flex-layout.row#disclosure-trigger-features"],
+    "props": {
+      "as": "div"
+    }
+  },
+
+  "flex-layout.row#disclosure-trigger-features": {
+    "children": [
+      "rich-text#features-disclosure-trigger-heading",
+      "flex-layout.col#spacer",
+      "disclosure-state-indicator"
+    ],
+    "props": {
+      "blockClass": ["items-end", "disclosure-trigger-specification"],
+      "colGap": 0,
+      "colSizing": "auto",
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#features-disclosure-trigger-heading": {
+    "props": {
+      "blockClass": ["features", "disclosure-trigger-heading"],
+      "text": "<span>Features & details</span>",
+      "font": "t-heading-5"
+    }
+  },
+
+  "disclosure-content#features": {
+    "children": ["product-specification-group#features"],
+    "props": {
+      "blockClass": "specification"
+    }
+  },
+
+  "product-specification-group#features": {
+    "children": ["flex-layout.row#spec-group--features"],
+    "props": {
+      "filter": {
+        "type": "show",
+        "specificationGroups": ["Features & details"]
+      }
+    }
+  },
+
+  "flex-layout.row#spec-group--features": {
+    "children": ["flex-layout.col#spec-group--features"],
+    "props": {
+      "blockClass": ["spec-group"]
+    }
+  },
+
+  "flex-layout.col#spec-group--features": {
+    "children": ["product-specification#table--features"],
+    "props": {
+      "blockClass": ["spec-group"]
+    }
+  },
+
+  "product-specification#table--features": {
+    "children": ["flex-layout.row#spec-item--features"]
+  },
+
+  "flex-layout.row#spec-item--features": {
+    "children": ["flex-layout.col#spec-name--features"],
+    "props": {
+      "blockClass": ["spec-item"],
+      "preserveLayoutOnMobile": true,
+      "colGap": 3
+    }
+  },
+
+  "flex-layout.col#spec-name--features": {
+    "children": ["product-specification-text#features"],
+    "props": {
+      "blockClass": ["spec-name", "features"]
+    }
+  },
+
+  "product-specification-text#features": {
+    "props": {
+      "blockClass": ["bullet-list"],
+      "message": "{specificationName}"
+    }
+  }
+}

@@ -1,0 +1,75 @@
+.menuContainer--flexCol {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.styledLinkContainer--flexCol {
+  margin: 0;
+  padding: 0;
+}
+
+.styledLink--flexCol {
+  color: #fff;
+  font-size: 14px;
+  line-height: 28px;
+  font-family: Roboto;
+  font-weight: 500;
+}
+
+.menuContainer--menuDrawer {
+  flex-flow: column nowrap;
+}
+
+.styledLinkContainer--departItem {
+  margin: 0;
+  padding: 0;
+}
+
+.styledLinkContent--departItem {
+  font-size: 16px;
+  line-height: 44px;
+  font-family: Roboto;
+  color: #717786;
+}
+
+.menuContainerNav--menuDrawer {
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid #dee7ef;
+}
+
+.styledLinkContainer--currencyFakeDropdown {
+  padding: 0px 48px 0px 16px;
+  margin: 0;
+  margin-right: 16px;
+  height: 42px;
+  line-height: 42px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 4px;
+  position: relative;
+}
+
+.menuContainerNav--currencyFakeDropdown {
+  display: flex;
+  align-items: center;
+}
+
+.styledLinkContent--currencyFakeDropdown {
+  font-size: 14px;
+  line-height: 42px;
+  font-family: Roboto;
+  color: #fff;
+}
+
+.styledLinkContainer--currencyFakeDropdown::after {
+  content: url("assets/icons/chevronDownSwitcher.svg");
+  position: absolute;
+  right: 16px;
+  top: 0;
+}
+
+@media (max-width: 64rem) {
+  .styledLinkContainer--currencyFakeDropdown {
+    border: none;
+  }
+}

@@ -1,0 +1,28 @@
+.container--headerMobile {
+  background: #597298;
+  z-index: 999;
+}
+
+.wrapper--box--stuck .container--box {
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  margin-left: 354px;
+  z-index: 997;
+}
+
+.container--stickyBuy {
+  background: #fff;
+  padding: 8px 0px;
+}
+
+.wrapper--stickyBuy {
+  height: 0 !important;
+  z-index: 999;
+}
+
+.container--stickyBuy :global(.vtex-button) {
+  height: 48px;
+  background: var(--serious-orange);
+  border: none;
+}

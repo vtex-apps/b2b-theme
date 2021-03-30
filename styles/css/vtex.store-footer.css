@@ -1,0 +1,24 @@
+.footerLayout {
+  background: var(--b2b-blue-darkest);
+  padding-top: 40px;
+  padding-bottom: 0px;
+}
+
+.footerLayout--relative {
+  position: relative;
+}
+
+.footerLayout--z-999 {
+  z-index: 999;
+}
+
+.footerLayout--z-998 {
+  z-index: 998;
+}
+
+@media (max-width: 64rem) {
+  .footerLayout {
+    padding-top: 24px;
+    padding-bottom: 32px;
+  }
+}

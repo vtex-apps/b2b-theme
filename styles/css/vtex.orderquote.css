@@ -1,0 +1,14 @@
+.containerCreate,
+.containerList,
+.containerView {
+  max-width: 1440px;
+  width: 100%;
+  padding: 0px;
+  margin: 0px auto;
+}
+
+.buttonSave :global(.vtex-button),
+.createButton :global(.vtex-button),
+.buttonUse :global(.vtex-button) {
+  background: var(--serious-blue-dark);
+}

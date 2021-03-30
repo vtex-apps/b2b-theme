@@ -1,0 +1,102 @@
+{
+  "store.orderplaced": {
+    "blocks": ["order-placed"]
+  },
+
+  "store.login": {
+    "blocks": ["login-content#default"]
+  },
+
+  "login-content#default": {
+    "props": {
+      "isInitialScreenOptionOnly": false,
+      "defaultOption": 1,
+      "showPasswordVerificationIntoTooltip": true
+    }
+  },
+
+  "product-summary.shelf": {
+    "children": [
+      "product-summary-add-to-list-button",
+      "product-summary-name",
+      "product-rating-inline",
+      "product-summary-space",
+      "challenge-permission#product-summary-price",
+      "product-identifier.summary",
+      "add-to-cart-button"
+    ]
+  },
+
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+
+  "flex-layout.col#divider--vertical": {
+    "children": [],
+    "props": {
+      "blockClass": ["divider--vertical"],
+      "borderWidth": 0,
+      "borderColor": "muted-5"
+    }
+  },
+
+  "flex-layout.row#divider--vertical": {
+    "children": [],
+    "props": {
+      "blockClass": ["divider--vertical"],
+      "borderWidth": 0,
+      "borderColor": "muted-5"
+    }
+  },
+
+  "flex-layout.col#divider": {
+    "children": [],
+    "props": {
+      "blockClass": "divider",
+      "border": "top",
+      "borderWidth": 1,
+      "borderColor": "muted-5",
+      "width": "grow"
+    }
+  },
+
+  "flex-layout.row#divider": {
+    "children": [],
+    "props": {
+      "blockClass": "divider",
+      "border": "top",
+      "borderWidth": 1,
+      "borderColor": "muted-5"
+    }
+  },
+
+  "disclosure-state-indicator": {
+    "props": {
+      "Show": "icon-caret#down",
+      "Hide": "icon-caret#up"
+    }
+  },
+
+  "icon-caret#down": {
+    "props": {
+      "blockClass": ["fresh-blue"],
+      "orientation": "down"
+    }
+  },
+
+  "icon-caret#up": {
+    "props": {
+      "blockClass": ["lines-darker"],
+      "orientation": "up"
+    }
+  },
+
+  "add-to-cart-button": {
+    "props": {
+      "addToCartFeedback": "customEvent",
+      "customPixelEventId": "add-to-cart-button"
+    }
+  }
+}

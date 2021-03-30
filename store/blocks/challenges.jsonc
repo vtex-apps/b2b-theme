@@ -1,0 +1,52 @@
+{
+  "challenge.trade-policy-condition": {
+    "props": {
+      "redirectPath": "/login",
+      "forbiddenRedirectPath": "/not-allowed"
+    }
+  },
+  "challenge-block#reseller": {
+    "blocks": [
+      "challenge-content#reseller",
+      "challenge-fallback#reseller"
+    ]
+  },
+  "challenge-content#reseller": {
+    "children": [
+      "link#orderQuote"
+    ],
+    "props": {
+      "blockClass": "resellerChallengeContent"
+    }
+  },
+  "challenge-fallback#reseller": {
+    "children": [
+      "link#reseller"
+    ],
+    "props": {
+      "blockClass": "resellerChallengeFallback"
+    }
+  },
+  "challenge-block#login": {
+    "blocks": [
+      "challenge-content#login",
+      "challenge-fallback#login"
+    ]
+  },
+  "challenge-content#login": {
+    "children": [
+      "link#profile"
+    ],
+    "props": {
+      "blockClass": "loginChallengeContent"
+    }
+  },
+  "challenge-fallback#login": {
+    "children": [
+      "login#mobile"
+    ],
+    "props": {
+      "blockClass": "loginChallengeFallback"
+    }
+  }
+}

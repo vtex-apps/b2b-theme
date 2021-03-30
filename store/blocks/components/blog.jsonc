@@ -1,0 +1,76 @@
+{
+  "flex-layout.row#blog": {
+    "children": ["flex-layout.col#blogSEO", "flex-layout.col#blogPosts"],
+    "props": {
+      "blockClass": "blog",
+      "colSizing": "auto",
+      "colGap": 8,
+      "preventHorizontalStretch": true
+    }
+  },
+
+  "flex-layout.col#blogSEO": {
+    "children": ["search-title.v2", "rich-text#blogSEO"],
+    "props": {
+      "blockClass": "blogSEO",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#blogSEO": {
+    "props": {
+      "text": "JBL TUNE 750BTNC wireless headphones feature powerful JBL Pure Bass Sound and active noise cancelling for punchy bass and an immersive audio experience. The lightweight over-ear design offers maximum comfort and sound quality while ready to travel everywhere you go with its compact foldable competence 15 hours of battery life which recharge in only 2 hours enables noise-free wireless playback Allowing connection with two Bluetooth devices simultaneously the multipoint connection makes sure you won’t miss a call on your phone while streaming videos on your tablet. JBL TUNE 750BTNC wireless headphones feature powerful JBL Pure Bass Sound and active noise cancelling for punchy bass and an immersive audio experience. The lightweight over-ear design offers maximum comfort and sound quality while ready to travel everywhere you go with its compact foldable competence 15 hours of battery life which recharge in only 2 hours enables noise-free wireless playback Allowing connection with two Bluetooth devices simultaneously the multipoint connection makes sure you won’t miss a call on your phone while streaming videos on your tablet.",
+      "blockClass": "blogSEO"
+    }
+  },
+
+  "flex-layout.col#blogPosts": {
+    "children": ["blog-category-preview.wordpress-category-preview"],
+    "props": {
+      "width": "grow"
+    }
+  },
+
+  "blog-category-preview.wordpress-category-preview": {
+    "props": {
+      "category": 11,
+      "numberOfPosts": 4,
+      "showDates": false,
+      "showExcerpts": true,
+      "absoluteLinks": true
+    }
+  },
+
+  "flex-layout.row#blogMobile": {
+    "children": ["flex-layout.col#blogColMobile"],
+    "props": {
+      "blockClass": "blog"
+    }
+  },
+
+  "flex-layout.col#blogColMobile": {
+    "children": [
+      "search-title.v2",
+      "rich-text#blogSEO",
+      "rich-text#blogSecondarySEO",
+      "blog-category-preview.wordpress-category-preview#mobile"
+    ]
+  },
+
+  "rich-text#blogSecondarySEO": {
+    "props": {
+      "text": "### Learn more about Computer & Software",
+      "blockClass": "blogSecondarySEO"
+    }
+  },
+
+  "blog-category-preview.wordpress-category-preview#mobile": {
+    "props": {
+      "category": 11,
+      "numberOfPosts": 3,
+      "showDates": false,
+      "showExcerpts": true,
+      "absoluteLinks": true
+    }
+  }
+}

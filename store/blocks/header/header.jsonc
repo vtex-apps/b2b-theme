@@ -1,0 +1,223 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+
+  "header-layout.desktop": {
+    "children": ["sticky-layout#desktop"]
+  },
+
+  "sticky-layout#desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": [
+      "flex-layout.row#telemarketing",
+      "flex-layout.row#desktop",
+      "flex-layout.row#headerStripe"
+    ]
+  },
+
+  "flex-layout.row#telemarketing": {
+    "children": ["telemarketing"],
+    "props": {
+      "blockClass": ["bg-blue-medium"],
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.row#desktop": {
+    "props": {
+      "verticalAlign": "center",
+      "blockClass": "header",
+      "colGap": 7,
+      "colSizing": "auto"
+    },
+    "children": [
+      "drawer",
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#search-bar",
+      "login",
+      "minicart.v2"
+    ]
+  },
+
+  "flex-layout.col#search-bar": {
+    "children": ["search-bar"],
+    "props": {
+      "paddingLeft": 8,
+      "width": "grow"
+    }
+  },
+
+  "flex-layout.row#headerStripe": {
+    "props": {
+      "blockClass": "headerStripe",
+      "horizontalAlign": "left",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "shopper-location",
+      "rich-text#headStripe1",
+      "rich-text#headStripe2",
+      "rich-text#headStripe3",
+      "rich-text#headStripe4",
+      "rich-text#headStripe5",
+      "flex-layout.col#spacer",
+      "challenge-block#reseller"
+    ]
+  },
+
+  "rich-text#headStripe1": {
+    "props": {
+      "blockClass": "HeaderStripeText",
+      "text": "[Today's Deals](/deals)"
+    }
+  },
+
+  "rich-text#headStripe2": {
+    "props": {
+      "blockClass": "HeaderStripeText",
+      "text": "[New Releases](/releases)"
+    }
+  },
+
+  "rich-text#headStripe3": {
+    "props": {
+      "blockClass": "HeaderStripeText",
+      "text": "[Top Sales](/top-sales)"
+    }
+  },
+
+  "rich-text#headStripe4": {
+    "props": {
+      "blockClass": "HeaderStripeText",
+      "text": "[Costumer Services](/services)"
+    }
+  },
+
+  "rich-text#headStripe5": {
+    "props": {
+      "blockClass": "HeaderStripeText",
+      "text": "[Gift Cards](/gift-cards)"
+    }
+  },
+
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["logo"]
+  },
+
+  "logo": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/icons/logoB2B.svg",
+      "width": "123"
+    }
+  },
+
+  "header-layout.mobile": {
+    "children": ["sticky-layout#mobile"]
+  },
+
+  "sticky-layout#mobile": {
+    "children": ["flex-layout.row#mobileHeader", "slider-layout#menuLinks"],
+    "props": {
+      "blockClass": "headerMobile"
+    }
+  },
+
+  "flex-layout.row#mobileHeader": {
+    "children": ["flex-layout.col#mobileHeader"]
+  },
+
+  "slider-layout#menuLinks": {
+    "props": {
+      "itemsPerPage": {
+        "phone": 2
+      },
+      "centerMode": "to-the-left",
+      "infinite": false,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "blockClass": "stripeSlider",
+      "fullWidth": true
+    },
+    "children": [
+      "rich-text#headStripe1",
+      "rich-text#headStripe2",
+      "rich-text#headStripe3",
+      "rich-text#headStripe4",
+      "rich-text#headStripe5"
+    ]
+  },
+
+  "flex-layout.col#mobileHeader": {
+    "children": ["flex-layout.row#mobile", "flex-layout.row#mobileSearch"],
+    "props": {
+      "blockClass": "main-header-mobile"
+    }
+  },
+
+  "flex-layout.row#mobile": {
+    "children": ["drawer", "logo", "challenge-block#login", "minicart.v2"],
+    "props": {
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "colSizing": "auto",
+      "fullWidth": true
+    }
+  },
+
+  "link#orderQuote": {
+    "props": {
+      "label": "Order quote",
+      "href": "/orderquote",
+      "blockClass": "orderQuote"
+    }
+  },
+
+  "link#profile": {
+    "children": ["icon-profile"],
+    "props": {
+      "href": "/account",
+      "blockClass": "accountLink"
+    }
+  },
+
+  "flex-layout.row#mobileSearch": {
+    "children": ["search-bar#mobile"],
+    "props": {
+      "blockClass": "searchBarMobile"
+    }
+  },
+
+  "search-bar#mobile": {
+    "blocks": ["autocomplete-result-list.v2#mobile"],
+    "props": {
+      "openAutocompleteOnFocus": true,
+      "blockClass": "searchMobile"
+    }
+  },
+
+  "login": {
+    "props": {
+      "iconLabel": "Hello, Sign in"
+    }
+  },
+
+  "login#mobile": {
+    "props": {
+      "iconLabel": "Sign in"
+    }
+  }
+}

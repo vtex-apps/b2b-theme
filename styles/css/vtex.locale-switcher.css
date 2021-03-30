@@ -1,0 +1,64 @@
+.button {
+  padding: 8px 48px 8px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 4px;
+  height: 42px;
+  position: relative;
+}
+
+.globeIcon {
+  color: rgba(255, 255, 255, 0.4);
+  margin-right: 8px;
+}
+
+.buttonText {
+  color: #fff;
+}
+
+.button::after {
+  content: url("assets/icons/chevronDownSwitcher.svg");
+  position: absolute;
+  right: 16px;
+  top: 45%;
+  transform: translateY(-50%);
+}
+
+.container--locationDrawer {
+  width: auto;
+  display: flex;
+  justify-content: start;
+  margin: 0;
+}
+
+.buttonText--locationDrawer {
+  color: #000;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.button--locationDrawer {
+  padding: 0;
+  border: none;
+}
+
+.button--locationDrawer::before {
+  content: url("assets/icons/globe.svg");
+  width: 20px;
+  height: 20px;
+  margin-right: 16px;
+}
+
+.button--locationDrawer::after {
+  content: none;
+}
+
+.globeIcon--locationDrawer {
+  display: none;
+  opacity: 0;
+}
+
+@media (max-width: 64rem) {
+  .button {
+    border: none;
+  }
+}

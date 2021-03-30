@@ -1,0 +1,21 @@
+.shippingHeader--desktop {
+  display: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+}
+
+.shippingListItem--desktop {
+  display: none;
+}
+
+.shippingListItem--desktop:first-child {
+  display: block;
+}
+
+.shippingListEmptyMessage,
+.shippingDeliveryName--desktop,
+.shippingListItem--desktop {
+  font-size: 14px;
+  color: black;
+}

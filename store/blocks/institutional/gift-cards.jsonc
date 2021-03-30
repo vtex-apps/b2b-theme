@@ -1,0 +1,30 @@
+{
+  "store.custom#gift-cards": {
+    "blocks": [
+      "flex-layout.row#institutional--gift-cards",
+      "flex-layout.row#newsletter"
+    ]
+  },
+
+  "flex-layout.row#institutional--gift-cards": {
+    "children": ["flex-layout.col#text--gift-cards", "image#mobile-phone"]
+  },
+
+  "flex-layout.col#text--gift-cards": {
+    "children": [
+      "rich-text#title--gift-cards",
+      "rich-text#institutional-placeholder"
+    ],
+    "props": {
+      "blockclass": "textColumn",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#title--gift-cards": {
+    "props": {
+      "text": "# Gift Cards",
+      "blockClass": "title"
+    }
+  }
+}

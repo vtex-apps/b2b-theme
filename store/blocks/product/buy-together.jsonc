@@ -1,0 +1,30 @@
+{
+  "product-kit#buy-together": {
+    "blocks": ["product-summary.shelf#buy-together"]
+  },
+
+  "product-summary.shelf#buy-together": {
+    "children": ["flex-layout.row#buy-together-summary"]
+  },
+
+  "flex-layout.row#buy-together-summary": {
+    "children": [
+      "flex-layout.col#buy-together-summary-aside",
+      "flex-layout.col#buy-together-summary-content"
+    ]
+  },
+
+  "flex-layout.col#buy-together-summary-aside": {
+    "children": ["product-summary-image"]
+  },
+
+  "flex-layout.col#buy-together-summary-content": {
+    "children": [
+      "product-summary-name",
+      "product-list-price",
+      "product-selling-price",
+      "product-price-savings",
+      "product-installments"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "modal-trigger#quickview": {
+    "props": {
+      "blockClass": "quickviewTrigger"
+    },
+    "children": ["image#quickviewTrigger", "modal-layout#quickview"]
+  },
+  "image#quickviewTrigger": {
+    "props": {
+      "src": "assets/icons/eyeIcon.svg",
+      "blockClass": "quickviewTrigger"
+    }
+  },
+  "modal-layout#quickview": {
+    "children": ["flex-layout.row#product-details", "modal-actions.close"],
+    "props": {
+      "blockClass": "quickviewContainer"
+    }
+  },
+  "modal-actions.close": {
+    "props": {
+      "label": ""
+    }
+  }
+}

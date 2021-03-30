@@ -1,0 +1,27 @@
+:global(.vtex-input-prefix__group),
+:global(.vtex-dropdown__container),
+:global(.vtex-input) {
+  border-width: 1px;
+}
+
+:global(.vtex-input-prefix__group),
+.container:global(.vtex-dropdown__container) {
+  border-color: var(--lines-darker);
+}
+
+.jsFocusVisible :global(.vtex__icon-caret-down),
+.jsFocusVisible :global(.vtex__icon-caret-up) {
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  color: transparent;
+}
+
+.jsFocusVisible :global(.vtex__icon-caret-down) {
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='7' viewBox='0 0 12 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L6 6L11 1' stroke='%230067C7' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+}
+
+.jsFocusVisible :global(.vtex__icon-caret-up) {
+  background-image: url("data:image/svg+xml,%3Csvg width='14' height='8' viewBox='0 0 14 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13 7L7 1L1 7' stroke='%23a3afbc' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+}

@@ -1,0 +1,53 @@
+{
+  // Deprecated
+  "newsletter": {
+    "props": {
+      "label": "Get news and special offers!",
+      "placeholder": "Email address",
+      "submit": "submit"
+    }
+  },
+
+  "flex-layout.row#newsletter": {
+    "children": ["rich-text#newsletter-title", "newsletter-form"],
+    "props": {
+      "blockClass": ["items-center", "bg-blue-medium", "c-on-base--inverted"],
+      "paddingBottom": {
+        "desktop": 0,
+        "mobile": 7
+      },
+      "fullWidth": false
+    }
+  },
+
+  "rich-text#newsletter-title": {
+    "props": {
+      "blockClass": ["newsletter-title"],
+      "text": "### Get news and special offers!",
+      "textColor": "c-on-base--inverted"
+    }
+  },
+
+  "newsletter-form": {
+    "children": ["flex-layout.row#newsletter-content"]
+  },
+
+  "flex-layout.row#newsletter-content": {
+    "children": ["flex-layout.col#newsletter-input-email", "newsletter-submit"],
+    "props": {
+      "colGap": 0,
+      "colSizing": "auto",
+      "fullWidth": true,
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.col#newsletter-input-email": {
+    "children": ["newsletter-input-email"],
+    "props": {
+      "width": "grow"
+    }
+  }
+}

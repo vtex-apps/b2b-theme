@@ -1,0 +1,457 @@
+{
+  "footer": {
+    "props": {},
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+  "footer-layout.desktop": {
+    "children": [
+      "flex-layout.row#footerDesktop",
+      "flex-layout.row#copyright",
+      "flex-layout.row#footerStripe"
+    ],
+    "props": {
+      "blockClass": ["relative", "z-998"]
+    }
+  },
+  "flex-layout.row#footerStripe": {
+    "props": {
+      "blockClass": "footerStripe"
+    },
+    "children": ["rich-text#footerStripe"]
+  },
+  "rich-text#footerStripe": {
+    "props": {
+      "text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc",
+      "blockClass": "footerStripe"
+    }
+  },
+  "footer-layout.mobile": {
+    "children": ["flex-layout.row#footerMobile"]
+  },
+  "flex-layout.row#footerDesktop": {
+    "props": {
+      "blockClass": "footer-row-1"
+    },
+    "children": [
+      "flex-layout.col#footer-1-desktop",
+      "flex-layout.col#footer-2-desktop",
+      "flex-layout.col#footer-3-desktop",
+      "flex-layout.col#footer-4-desktop"
+    ]
+  },
+  "flex-layout.col#footer-1-desktop": {
+    "children": ["rich-text#footerTitle1", "vtex.menu@2.x:menu#about"]
+  },
+  "flex-layout.col#footer-2-desktop": {
+    "children": ["rich-text#footerTitle2", "vtex.menu@2.x:menu#costumer"]
+  },
+  "flex-layout.col#footer-3-desktop": {
+    "props": {
+      "preventVerticalStretch": true
+    },
+    "children": ["rich-text#footerTitle3", "link#call", "link#mail"]
+  },
+  "flex-layout.col#footer-4-desktop": {
+    "children": [
+      "rich-text#footerTitle4",
+      "flex-layout.row#paymentImagesDesktop",
+      "rich-text#followTitle",
+      "flex-layout.row#networks"
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
+    }
+  },
+  "rich-text#followTitle": {
+    "props": {
+      "text": "Follow us",
+      "blockClass": "followTitle"
+    }
+  },
+  "rich-text#footerTitle1": {
+    "props": {
+      "text": "About us",
+      "blockClass": "footerTitle"
+    }
+  },
+  "rich-text#footerTitle2": {
+    "props": {
+      "text": "Costumer Service",
+      "blockClass": "footerTitle"
+    }
+  },
+  "rich-text#footerTitle3": {
+    "props": {
+      "text": "Contact Us",
+      "blockClass": "footerTitle"
+    }
+  },
+  "rich-text#footerTitle4": {
+    "props": {
+      "text": "Pay with credit card",
+      "blockClass": "footerTitle"
+    }
+  },
+  "link#call": {
+    "children": ["image#phoneIcon", "rich-text#call"],
+    "props": {
+      "href": "tel:+1999999999",
+      "target": "_blank",
+      "blockClass": "linkCall"
+    }
+  },
+  "link#mail": {
+    "children": ["image#mailIcon", "rich-text#mail"],
+    "props": {
+      "href": "mailto:mailto@mail.com",
+      "target": "_blank",
+      "blockClass": "linkMail"
+    }
+  },
+  "image#phoneIcon": {
+    "props": {
+      "src": "assets/icons/phoneIcon.svg"
+    }
+  },
+  "image#mailIcon": {
+    "props": {
+      "src": "assets/icons/mailIcon.svg"
+    }
+  },
+  "rich-text#call": {
+    "props": {
+      "text": "call us",
+      "blockClass": "callTo"
+    }
+  },
+  "rich-text#mail": {
+    "props": {
+      "text": "send a message",
+      "blockClass": "mailTo"
+    }
+  },
+  "flex-layout.row#copyright": {
+    "props": {
+      "colSizing": "auto",
+      "blockClass": "copyrightContainer"
+    },
+    "children": [
+      "flex-layout.col#copyright",
+      "flex-layout.col#spacer"
+      // Deprecated
+      // "vtex.menu@2.x:menu#currency"
+      // "locale-switcher"
+    ]
+  },
+
+  // Deprecated
+  // "vtex.menu@2.x:menu#currency": {
+  //   "children": ["menu-item#currency"],
+  //   "props": {
+  //     "blockClass": "currencyFakeDropdown"
+  //   }
+  // },
+
+  // "menu-item#currency": {
+  //   "props": {
+  //     "id": "currency-selector",
+  //     "type": "custom",
+  //     "highlight": false,
+  //     "itemProps": {
+  //       "type": "internal",
+  //       "href": "#",
+  //       "noFollow": false,
+  //       "text": "Select Currency"
+  //     },
+  //     "blockClass": "currencyFakeDropdown"
+  //   },
+  //   "blocks": ["vtex.menu@2.x:submenu#currency"]
+  // },
+  // "vtex.menu@2.x:submenu#currency": {
+  //   "children": ["vtex.menu@2.x:menu#subcurrency"]
+  // },
+  // "vtex.menu@2.x:menu#subcurrency": {
+  //   "children": ["menu-item#en", "menu-item#es", "menu-item#br"],
+  //   "props": {
+  //     "orientation": "vertical"
+  //   }
+  // },
+  // "menu-item#en": {
+  //   "props": {
+  //     "id": "currency-english",
+  //     "type": "custom",
+  //     "highlight": false,
+  //     "itemProps": {
+  //       "type": "internal",
+  //       "href": "/en",
+  //       "noFollow": false,
+  //       "text": "United States - USD"
+  //     }
+  //   }
+  // },
+  // "menu-item#es": {
+  //   "props": {
+  //     "id": "currency-spain",
+  //     "type": "custom",
+  //     "highlight": false,
+  //     "itemProps": {
+  //       "type": "internal",
+  //       "href": "/es",
+  //       "noFollow": false,
+  //       "text": "Spain - EUR"
+  //     }
+  //   }
+  // },
+  // "menu-item#br": {
+  //   "props": {
+  //     "id": "currency-brazil",
+  //     "type": "custom",
+  //     "highlight": false,
+  //     "itemProps": {
+  //       "type": "internal",
+  //       "href": "/br",
+  //       "noFollow": false,
+  //       "text": "Brazil - BRL"
+  //     }
+  //   }
+  // },
+
+  "flex-layout.col#copyright": {
+    "props": {},
+    "children": ["flex-layout.row#vtexLogo"]
+  },
+  "flex-layout.row#vtexLogo": {
+    "props": {
+      "preventHorizontalStretch": true
+    },
+    "children": ["image#vtexLogo", "rich-text#rights"]
+  },
+  "image#vtexLogo": {
+    "props": {
+      "blockClass": "vtexLogo",
+      "src": "assets/placeholders/vtexLogo.png"
+    }
+  },
+  "rich-text#rights": {
+    "props": {
+      "text": "2020 @ All Right Reserved to VTEX",
+      "blockClass": "footerRights"
+    }
+  },
+  "flex-layout.row#footerMobile": {
+    "children": [
+      "flex-layout.row#footerMenu",
+      "flex-layout.col#payment",
+      // "flex-layout.row#currency",
+      "flex-layout.row#networks",
+      "rich-text#copyrightMobile",
+      "rich-text#footerTextMobile",
+      "image#vtexLogoMobile"
+    ]
+  },
+  // Deprecated
+  // "flex-layout.row#currency": {
+  //   "children": ["vtex.menu@2.x:menu#currency", "locale-switcher"],
+  //   "props": {
+  //     "preserveLayoutOnMobile": true,
+  //     "blockClass": "mobileCurrencyRow",
+  //     "colSizing": "auto"
+  //   }
+  // },
+  "flex-layout.row#footerMenu": {
+    "children": [
+      "link#footerLink1",
+      "link#footerLink2",
+      "link#footerLink3",
+      "link#footerLink4",
+      "link#footerLink5",
+      "link#footerLink6"
+    ],
+    "props": {
+      "blockClass": "footerLink"
+    }
+  },
+  "link#footerLink1": {
+    "props": {
+      "href": "/about",
+      "label": "About us",
+      "blockClass": "footerLink"
+    }
+  },
+  "link#footerLink2": {
+    "props": {
+      "href": "/policy",
+      "label": "Return Policy",
+      "blockClass": "footerLink"
+    }
+  },
+  "link#footerLink3": {
+    "props": {
+      "href": "/orders",
+      "label": "Your orders",
+      "blockClass": "footerLink"
+    }
+  },
+  "link#footerLink4": {
+    "props": {
+      "href": "/service",
+      "label": "Costumer service",
+      "blockClass": "footerLink"
+    }
+  },
+  "link#footerLink5": {
+    "props": {
+      "href": "/shipping",
+      "label": "Shipping info",
+      "blockClass": "footerLink"
+    }
+  },
+  "link#footerLink6": {
+    "props": {
+      "href": "/support",
+      "label": "Contact & Support",
+      "blockClass": "footerLink"
+    }
+  },
+  "flex-layout.col#payment": {
+    "children": ["rich-text#payment", "flex-layout.row#paymentImages"],
+    "props": {
+      "blockClass": "paymentCol"
+    }
+  },
+  "rich-text#payment": {
+    "props": {
+      "text": "Pay with credit card",
+      "blockClass": "paymentLabel"
+    }
+  },
+  "flex-layout.row#paymentImagesDesktop": {
+    "children": [
+      "image#visa",
+      "image#mastercard",
+      "image#express",
+      "image#elo",
+      "image#dinners"
+    ],
+    "props": {
+      "colSizing": "auto",
+      "blockClass": "paymentImages"
+    }
+  },
+  "flex-layout.row#paymentImages": {
+    "children": [
+      "image#visa",
+      "image#mastercard",
+      "image#express",
+      "image#elo",
+      "image#dinners"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "blockClass": "paymentImages"
+    }
+  },
+  "image#visa": {
+    "props": {
+      "src": "assets/placeholders/visaLogo.png",
+      "blockClass": "paymentImage"
+    }
+  },
+  "image#mastercard": {
+    "props": {
+      "src": "assets/placeholders/masterCardLogo.png",
+      "blockClass": "paymentImage"
+    }
+  },
+  "image#express": {
+    "props": {
+      "src": "assets/placeholders/expressLogo.png",
+      "blockClass": "paymentImage"
+    }
+  },
+  "image#elo": {
+    "props": {
+      "src": "assets/placeholders/eloLogo.png",
+      "blockClass": "paymentImage"
+    }
+  },
+  "image#dinners": {
+    "props": {
+      "src": "assets/placeholders/dinnersLogo.png",
+      "blockClass": "paymentImage"
+    }
+  },
+  "rich-text#copyrightMobile": {
+    "props": {
+      "text": "2020 @ All Right Reserved to VTEX",
+      "blockClass": "copyright"
+    }
+  },
+  "rich-text#footerTextMobile": {
+    "props": {
+      "text": "Amet minim mollit non deserunt ullamco est sit aliqua do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt amet.",
+      "blockClass": "footerStripe"
+    }
+  },
+  "image#vtexLogoMobile": {
+    "props": {
+      "src": "assets/placeholders/vtexLogo.png",
+      "blockClass": "vtexLogo"
+    }
+  },
+  "flex-layout.row#networks": {
+    "children": ["link#facebook", "link#instagram", "link#twitter"],
+    "props": {
+      "blockClass": "networks",
+      "horizontalAlign": "center",
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "colGap": 3,
+      "colSizing": "auto",
+      "fullWidth": false
+    }
+  },
+  "link#facebook": {
+    "children": ["image#facebook"],
+    "props": {
+      "href": "//facebook.com",
+      "target": "_blank",
+      "blockClass": "networkLink"
+    }
+  },
+  "link#instagram": {
+    "children": ["image#instagram"],
+    "props": {
+      "href": "//instagram.com",
+      "target": "_blank",
+      "blockClass": "networkLink"
+    }
+  },
+  "link#twitter": {
+    "children": ["image#twitter"],
+    "props": {
+      "href": "//twitter.com",
+      "target": "_blank",
+      "blockClass": "networkLink"
+    }
+  },
+  "image#facebook": {
+    "props": {
+      "src": "assets/placeholders/facebookIcon.png",
+      "blockClass": "networkImage"
+    }
+  },
+  "image#instagram": {
+    "props": {
+      "src": "assets/placeholders/instagramIcon.png",
+      "blockClass": "networkImage"
+    }
+  },
+  "image#twitter": {
+    "props": {
+      "src": "assets/placeholders/twitterIcon.png",
+      "blockClass": "networkImage"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "my-account-link.wishlist-link": {
+    "props": {
+      "label": "My Wishlist"
+    }
+  },
+  "my-account-page.wishlist-page": {
+    "children": ["flex-layout.row#top", "list-context.wishlist"]
+  },
+  "list-context.wishlist": {
+    "blocks": ["product-summary.shelf#wishlist"],
+    "children": ["slider-layout#wishlist"]
+  },
+  "product-summary.shelf#wishlist": {
+    "props": {
+      "blockClass": "summaryComplete"
+    },
+    "children": [
+      "flex-layout.row#stackSavings",
+      "product-summary-brand",
+      "product-summary-name",
+      "product-rating-summary",
+      "product-summary-price",
+      "flex-layout.row#product-summary-buy-button",
+      "add-to-list-btn",
+      "modal-trigger#quickview"
+    ]
+  },
+  "slider-layout#wishlist": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": false,
+      "fullWidth": true,
+      "showPaginationDots": "desktopOnly",
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "shelfStyle1"
+    }
+  }
+}

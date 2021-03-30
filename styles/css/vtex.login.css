@@ -1,0 +1,53 @@
+.container :global(.vtex-button) {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 176px;
+  height: 48px;
+}
+
+.container :global(.vtex-button__label) {
+  padding: 0 0 0 0;
+}
+
+.label {
+  color: #fff;
+  text-transform: initial;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.profile {
+  color: #fff;
+}
+
+.sendButton :global(.vtex-button) {
+  background: #214d8e;
+  border: none;
+}
+
+@media (max-width: 64rem) {
+  .profile {
+    display: block;
+  }
+
+  .container :global(.vtex-button) {
+    width: 74px;
+    height: 32px;
+    border-color: #fff;
+  }
+
+  .label {
+    display: block;
+    color: #fff;
+    font-size: 0;
+    padding: 0;
+  }
+
+  .label::after {
+    content: "Sing in";
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 32px;
+    font-weight: 500;
+  }
+}

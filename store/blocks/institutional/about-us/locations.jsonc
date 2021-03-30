@@ -1,0 +1,30 @@
+{
+  "store.custom#locations": {
+    "blocks": [
+      "flex-layout.row#institutional--locations",
+      "flex-layout.row#newsletter"
+    ]
+  },
+
+  "flex-layout.row#institutional--locations": {
+    "children": ["flex-layout.col#text--locations", "image#mobile-phone"]
+  },
+
+  "flex-layout.col#text--locations": {
+    "children": [
+      "rich-text#title--locations",
+      "rich-text#institutional-placeholder"
+    ],
+    "props": {
+      "blockclass": "textColumn",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#title--locations": {
+    "props": {
+      "text": "# Locations",
+      "blockClass": "title"
+    }
+  }
+}

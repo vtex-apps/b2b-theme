@@ -1,0 +1,12 @@
+{
+  "store.custom#quickOrderByOne": {
+    "children": ["flex-layout.row#quickByOneWrap"]
+  },
+  "flex-layout.row#quickByOneWrap": {
+    "children": ["flex-layout.row#autocomplete"],
+    "props": {
+      "blockClass": "quickOrderContainer",
+      "paddingBottom": 9
+    }
+  }
+}

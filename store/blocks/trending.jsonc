@@ -1,0 +1,70 @@
+{
+  "store.custom.product-comparison#trending": {
+    "blocks": [
+      "search-result-layout.customQuery#trending",
+      "flex-layout.row#newsletter"
+    ]
+  },
+  "search-result-layout.customQuery#trending": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByTopSaleDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 10,
+        "skusFilter": "ALL",
+        "simulationBehavior": "skip"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop.product-comparison#trending",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  },
+  "search-result-layout.desktop.product-comparison#trending": {
+    "children": [
+      "flex-layout.row#searchLayout--trending",
+      "product-comparison-drawer"
+    ],
+    "props": {
+      "pagination": "show-more",
+      "preventRouteChange": true
+    }
+  },
+  "flex-layout.row#searchLayout--trending": {
+    "children": ["flex-layout.col#pageContent--trending"],
+    "props": {
+      "colSizing": "auto",
+      "fullWidth": true,
+      "marginBottom": 9
+    }
+  },
+  "flex-layout.col#pageContent--trending": {
+    "children": ["flex-layout.col#search-content--trending"],
+    "props": {
+      "blockClass": "pageContent",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.col#search-content--trending": {
+    "children": [
+      "rich-text#title--trending",
+      "flex-layout.row#searchinfo",
+      "flex-layout.row#fetchprevious",
+      "flex-layout.row#products",
+      "flex-layout.row#fetchmore"
+    ],
+    "props": {
+      "paddingLeft": 7,
+      "paddingRight": 7
+    }
+  },
+
+  "rich-text#title--trending": {
+    "props": {
+      "text": "## What's trending",
+      "blockClass": "title"
+    }
+  }
+}

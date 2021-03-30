@@ -1,0 +1,39 @@
+.tileList .tileListList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 12px;
+  padding: 0px 24px;
+  margin: 0;
+}
+
+.tileListTitle {
+  display: none;
+  opacity: 0;
+}
+
+.biggy-autocomplete {
+  padding-top: 0;
+}
+
+.tileList,
+.itemList--suggestion {
+  padding-top: 24px;
+}
+
+.itemListTitle {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #000;
+  text-transform: initial;
+}
+
+@media (max-width: 64rem) {
+  .biggy-autocomplete {
+    padding: 0;
+  }
+
+  .tileList .tileListList {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,46 @@
+.drawerContainer {
+  z-index: 6;
+}
+
+.productSelectorContainer {
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.productSelectorContainer :global(.vtex-checkbox__line-container) {
+  justify-content: center;
+}
+
+.productSelectorContainer :global(.vtex-checkbox__label) {
+  width: auto;
+}
+
+.productSelectorContainer :global(.vtex-checkbox__inner-container) {
+  width: 20px;
+  height: 20px;
+  border-width: 1px;
+}
+
+.productSelectorContainer :global(.vtex-checkbox__container),
+.productSelectorContainer :global(.vtex-checkbox__input) {
+  width: 20px;
+  height: 20px;
+}
+
+.imageElement--paymentImage {
+  margin: 0px auto;
+}
+.showDifferencesContainer :global(.vtex-checkbox__inner-container),
+.productSelectorContainer :global(.vtex-checkbox__inner-container) {
+  border-color: #a3afbc;
+}
+
+.productSelectorContainer :global(.vtex-checkbox__box-wrapper) {
+  width: 20px;
+  height: 20px;
+}
+
+.productSelectorContainer :global(.vtex__icon-check) {
+  width: 16px;
+  height: 16px;
+}

@@ -1,0 +1,7 @@
+{
+  "store.custom#product-comparison-list": {
+    "children": [
+      "comparison-page"
+    ]
+  }
+}

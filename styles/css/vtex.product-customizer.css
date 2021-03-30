@@ -1,0 +1,27 @@
+.textInputValue {
+  margin-top: 8px !important;
+}
+
+.textInputValue :global(.vtex-input-prefix__group) {
+  border: none;
+}
+
+.textInputValue :global(.vtex-styleguide-9-x-input) {
+  background: #ffffff;
+  border: 1px solid #a3afbc;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0 20px;
+}
+
+.textInputValue :global(.vtex-input__label) {
+  display: none;
+}
+
+.textInputValue::after {
+  display: inline-block;
+  color: #717786;
+  content: "Max. of 20 characters";
+  font-size: 12px;
+  margin-top: 8px;
+}

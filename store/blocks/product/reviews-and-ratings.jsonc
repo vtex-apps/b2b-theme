@@ -1,0 +1,105 @@
+{
+  "flex-layout.row#reviews-and-ratings": {
+    "children": ["flex-layout.col#reviews-and-ratings"],
+    "props": {
+      "blockClass": "reviews-and-ratings"
+    }
+  },
+
+  "flex-layout.col#reviews-and-ratings": {
+    "children": [
+      "disclosure-layout#reviews-and-ratings",
+      "flex-layout.col#divider"
+    ],
+    "props": {
+      "blockClass": "reviews-and-ratings",
+      "width": "74%"
+    }
+  },
+
+  "disclosure-layout#reviews-and-ratings": {
+    "children": [
+      "disclosure-trigger#reviews-and-ratings",
+      "disclosure-content#reviews-and-ratings"
+    ],
+    "props": {
+      "initialVisibility": "visible"
+    }
+  },
+
+  "disclosure-trigger#reviews-and-ratings": {
+    "children": ["flex-layout.row#disclosure-trigger-reviews"],
+    "props": {
+      "as": "div"
+    }
+  },
+
+  "flex-layout.row#disclosure-trigger-reviews": {
+    "children": [
+      "rich-text#reviews-disclosure-trigger-heading",
+      "flex-layout.col#spacer",
+      "disclosure-state-indicator"
+    ],
+    "props": {
+      "blockClass": ["items-end", "disclosure-trigger-reviews"],
+      "colGap": 0,
+      "colSizing": "auto",
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#reviews-disclosure-trigger-heading": {
+    "props": {
+      "blockClass": ["reviews", "disclosure-trigger-heading"],
+      "text": "<span>Customer reviews</span>",
+      "font": "t-heading-5"
+    }
+  },
+
+  "disclosure-content#reviews-and-ratings": {
+    "children": ["flex-layout.row#reviews"],
+    "props": {
+      "blockClass": "reviews-and-ratings"
+    }
+  },
+
+  "flex-layout.row#reviews": {
+    "children": ["flex-layout.col#reviews"]
+  },
+
+  "flex-layout.col#reviews": {
+    "children": ["flex-layout.row#reviews-content"]
+  },
+
+  "flex-layout.row#reviews-content": {
+    "children": [
+      "flex-layout.col#ratings-only",
+      "flex-layout.col#reviews-only"
+    ],
+    "props": {
+      "colGap": 8,
+      "colSizing": "auto",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    }
+  },
+
+  // This is a nasty workaround because `product-reviews.vtex` doesn't have composability
+  // and it doesn't respect `blockClass` either.
+
+  "flex-layout.col#ratings-only": {
+    "children": ["product-reviews"],
+    "props": {
+      "blockClass": ["ratings-only"]
+    }
+  },
+
+  "flex-layout.col#reviews-only": {
+    "children": ["product-reviews"],
+    "props": {
+      "blockClass": ["reviews-only"]
+    }
+  }
+}

@@ -1,0 +1,117 @@
+.inlineContainer {
+  margin: 0;
+}
+
+.container {
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+}
+
+.summaryContainer {
+  display: flex;
+  font-size: 12px;
+  line-height: 16px;
+  color: #717786;
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+  padding-right: 8px;
+}
+
+.summaryContainer .stars {
+  justify-content: center;
+}
+
+.star {
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: transparent;
+  display: inline-block;
+  font-size: 0;
+  height: 16px;
+  width: 16px;
+}
+
+.star--filled {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 576 512'%3E%3Cpath fill='%23FFBA09' d='M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.star--empty {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 576 512'%3E%3Cpath fill='%23FFBA09' d='M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+/* Product Page */
+
+@media (min-width: 64rem) {
+  .reviewCommentsContainer {
+    width: 680px;
+  }
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--ratings-only) .container {
+  background-color: #f3f9ff;
+  border-radius: 4px;
+  padding: 32px 24px;
+}
+
+.starsContainer,
+.reviewsRating {
+  margin-bottom: 1rem;
+}
+
+.reviewsRating {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.starsContainer .stars {
+  justify-content: center;
+}
+
+.writeReviewContainer {
+  text-align: center;
+  margin: 0;
+}
+
+.writeReviewContainer
+  :global(.vtex-styleguide-9-x-jsFocusVisible)
+  :not(:global(.vtex-fake)):first-child {
+  justify-content: center;
+}
+
+.writeReviewContainer
+  :global(.vtex-styleguide-9-x-jsFocusVisible)
+  :not(:global(.vtex-fake)):first-child
+  :not(:global(.vtex-fake)):last-child {
+  flex-grow: unset;
+}
+
+.formContainer {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  text-align: initial;
+}
+
+.formContainer :global(.vtex-card) {
+  background-color: transparent;
+  box-shadow: none !important;
+  padding: 0;
+}
+
+.reviewCommentRating {
+  color: var(--black-dark);
+}
+
+.reviewComment {
+  border-width: 1px;
+  color: var(--black-medium);
+}

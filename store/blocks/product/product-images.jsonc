@@ -1,0 +1,32 @@
+{
+  "product-images#desktop": {
+    "props": {
+      "blockClass": "desktop",
+      "maxHeight": 448,
+      "aspectRatio": "1:1",
+      "showNavigationArrows": false,
+      "showPaginationDots": false,
+      "thumbnailAspectRatio": "1:1",
+      "thumbnailMaxHeight": 100,
+      "zoomMode": "in-place-hover"
+    }
+  },
+
+  "flex-layout.row#product-images": {
+    "children": ["product-images#mobile"],
+    "props": {
+      "blockClass": ["product-images"],
+      "marginBottom": 6
+    }
+  },
+
+  "product-images#mobile": {
+    "props": {
+      "blockClass": ["dots-around"],
+      "aspectRatio": "1:1",
+      "displayThumbnailsArrows": true,
+      "showNavigationArrows": false,
+      "showPaginationDots": true
+    }
+  }
+}

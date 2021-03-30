@@ -1,0 +1,23 @@
+.lowStockText,
+.lowStockHighlight,
+.lowStockText {
+  font-size: 12px;
+  line-height: 16px;
+  color: #ff7d30;
+  font-family: Roboto;
+  font-weight: 700;
+}
+
+.highStockText {
+  font-size: 12px;
+  line-height: 16px;
+  color: #000;
+  font-family: Roboto;
+  font-weight: 400;
+}
+
+.highStockText {
+  color: #ff5f00;
+  font-weight: 500;
+  font-size: 14px;
+}

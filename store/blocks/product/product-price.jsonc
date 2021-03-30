@@ -1,0 +1,62 @@
+{
+  "flex-layout.row#product-price": {
+    "children": ["flex-layout.col#product-price"],
+    "props": {
+      "blockClass": "product-price"
+    }
+  },
+  "flex-layout.col#product-price": {
+    "children": [
+      "product-list-price#desktop",
+      "flex-layout.row#price",
+      "flex-layout.row#priceSavings"
+    ],
+    "props": {
+      "blockClass": "product-price"
+    }
+  },
+  "flex-layout.row#priceSavings": {
+    "children": [
+      "product-price-savings#desktop",
+      "product-price-savings#percentage"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "blockClass": "priceSavings"
+    }
+  },
+  "flex-layout.row#price": {
+    "children": ["product-selling-price#desktop"],
+    "props": {
+      "blockClass": ["items-baseline"],
+      "colSizing": "auto",
+      "colGap": 3,
+      "fullWidth": true,
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    }
+  },
+  "product-selling-price#desktop": {
+    "props": {
+      "blockClass": ["desktop"],
+      "message": "{sellingPriceWithTax} (with taxes)"
+    }
+  },
+  "product-list-price#desktop": {
+    "props": {
+      "blockClass": ["desktop"]
+    }
+  },
+  "product-price-savings#desktop": {
+    "props": {
+      "blockClass": ["desktop"]
+    }
+  },
+  "product-price-savings#percentage": {
+    "props": {
+      "message": "({savingsPercentage})",
+      "blockClass": ["desktop", "savingPercent"]
+    }
+  }
+}

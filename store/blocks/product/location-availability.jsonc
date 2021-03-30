@@ -1,0 +1,337 @@
+{
+  "flex-layout.row#location-availability": {
+    "children": ["flex-layout.col#location-availability"],
+    "props": {
+      "blockClass": ["reset-layout", "items-center", "location-availability"],
+      "colGap": 0,
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true
+    }
+  },
+
+  "flex-layout.col#location-availability": {
+    "children": ["location-context#desktop"],
+    "props": {
+      "width": "grow"
+    }
+  },
+
+  "location-context#desktop": {
+    "children": [
+      "product-location-shipping-options#desktop",
+      "modal-trigger#shipping-availability"
+    ],
+    "props": {
+      "blockClass": ["desktop"]
+    }
+  },
+
+  "product-location-shipping-options#desktop": {
+    "props": {
+      "blockClass": "desktop"
+    }
+  },
+
+  "modal-trigger#shipping-availability": {
+    "children": [
+      "rich-text#modal-trigger-shipping-availability",
+      "modal-layout#shipping-availability"
+    ]
+  },
+
+  "rich-text#modal-trigger-shipping-availability": {
+    "props": {
+      "blockClass": ["modal-trigger-shipping-availability"],
+      "text": "See more shipping options",
+      "font": "t-small",
+      "textColor": "c-on-action-secondary"
+    }
+  },
+
+  "modal-layout#shipping-availability": {
+    "children": [
+      "modal-header#shipping-availability",
+      "flex-layout.row#pickup-and-shipping"
+    ],
+    "props": {
+      "blockClass": ["shipping-availability"]
+    }
+  },
+
+  "modal-header#shipping-availability": {
+    "children": ["rich-text#shipping-availability"],
+    "props": {
+      "blockClass": ["shipping-availability"]
+    }
+  },
+
+  "rich-text#shipping-availability": {
+    "props": {
+      "blockClass": ["reset-spacing"],
+      "text": "###### Shipping options",
+      "font": "t-heading-6"
+    }
+  },
+
+  "flex-layout.row#pickup-and-shipping": {
+    "children": ["flex-layout.col#pickup-and-shipping"],
+    "props": {
+      "paddingBottom": {
+        "mobile": 5,
+        "desktop": 7
+      },
+      "paddingTop": {
+        "mobile": 5,
+        "desktop": 7
+      }
+    }
+  },
+
+  "flex-layout.col#pickup-and-shipping": {
+    "children": ["flex-layout.row#pickup-and-shipping-content"],
+    "props": {
+      "paddingLeft": {
+        "mobile": 5,
+        "desktop": 7
+      },
+      "paddingRight": {
+        "mobile": 5,
+        "desktop": 7
+      }
+    }
+  },
+
+  "flex-layout.row#pickup-and-shipping-content": {
+    "children": ["flex-layout.col#pickup-and-shipping-left"]
+  },
+
+  // Deprecated
+  // "flex-layout.row#pickup-and-shipping-spacer": {
+  //   "children": ["flex-layout.col#pickup-and-shipping-spacer"],
+  //   "props": {
+  //     "paddingBottom": {
+  //       "mobile": 3,
+  //       "desktop": 5
+  //     },
+  //     "paddingTop": {
+  //       "mobile": 3,
+  //       "desktop": 5
+  //     }
+  //   }
+  // },
+
+  // "flex-layout.col#pickup-and-shipping-spacer": {
+  //   "children": [],
+  //   "props": {
+  //     "paddingLeft": {
+  //       "mobile": 3,
+  //       "desktop": 5
+  //     },
+  //     "paddingRight": {
+  //       "mobile": 3,
+  //       "desktop": 5
+  //     }
+  //   }
+  // },
+
+  "flex-layout.col#pickup-and-shipping-left": {
+    "children": ["flex-layout.row#shipping-simulator"],
+    "props": {
+      "blockClass": ["br2", "bg-fresh-blue-lightest"],
+      "paddingLeft": {
+        "mobile": 5,
+        "desktop": 9
+      },
+      "paddingRight": {
+        "mobile": 5,
+        "desktop": 9
+      }
+    }
+  },
+
+  "flex-layout.row#shipping-simulator": {
+    "children": ["flex-layout.col#shipping-simulator"],
+    "props": {
+      "paddingTop": {
+        "mobile": 5,
+        "desktop": 7
+      },
+      "paddingBottom": {
+        "mobile": 6,
+        "desktop": 8
+      }
+    }
+  },
+
+  "flex-layout.col#shipping-simulator": {
+    "children": [
+      "flex-layout.row#shipping-simulator-title",
+      "rich-text#shipping-simulator-text",
+      "shipping-simulator#default"
+    ],
+    "props": {
+      "rowGap": {
+        "mobile": 3,
+        "desktop": 5
+      }
+    }
+  },
+
+  "flex-layout.row#shipping-simulator-title": {
+    "children": ["icon#truck", "rich-text#shipping-simulator-title"],
+    "props": {
+      "border": "bottom",
+      "borderColor": "muted-4",
+      "borderWidth": 0,
+      "blockClass": ["items-center", "justify-center"],
+      "colGap": 5,
+      "colSizing": "auto",
+      "fullWidth": true,
+      "marginBottom": {
+        "mobile": 3,
+        "desktop": 5
+      },
+      "paddingBottom": {
+        "mobile": 4,
+        "desktop": 6
+      },
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    }
+  },
+
+  "icon#truck": {
+    "props": {
+      "id": "mpa-truck",
+      "size": "24",
+      "viewBox": "0 0 26 22"
+    }
+  },
+
+  "rich-text#shipping-simulator-title": {
+    "props": {
+      "blockClass": ["reset-spacing"],
+      "text": "##### Shipping",
+      "font": "t-heading-5"
+    }
+  },
+
+  "rich-text#shipping-simulator-text": {
+    "props": {
+      "blockClass": ["reset-spacing", "fw5", "black-medium"],
+      "text": "Insert your Postal Code",
+      "font": "t-small",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+  "shipping-simulator#default": {
+    "props": {
+      "shouldUpdateOrderForm": true,
+      "blockClass": "default"
+    }
+  }
+
+  // Deprecated
+  // "flex-layout.col#pickup-and-shipping-right": {
+  //   "children": ["flex-layout.row#pickup-availability"],
+  //   "props": {
+  //     "blockClass": ["br2", "bg-fresh-blue-lightest"],
+  //     "paddingLeft": {
+  //       "mobile": 5,
+  //       "desktop": 9
+  //     },
+  //     "paddingRight": {
+  //       "mobile": 5,
+  //       "desktop": 9
+  //     },
+  //     "width": "50%"
+  //   }
+  // },
+
+  // "flex-layout.row#pickup-availability": {
+  //   "children": ["flex-layout.col#pickup-availability"],
+  //   "props": {
+  //     "paddingTop": {
+  //       "mobile": 5,
+  //       "desktop": 7
+  //     },
+  //     "paddingBottom": {
+  //       "mobile": 6,
+  //       "desktop": 8
+  //     }
+  //   }
+  // },
+
+  // "flex-layout.col#pickup-availability": {
+  //   "children": [
+  //     "flex-layout.row#pickup-availability-title",
+  //     "rich-text#pickup-availability-text",
+  //     "pickup-availability#default"
+  //   ],
+  //   "props": {
+  //     "rowGap": {
+  //       "mobile": 3,
+  //       "desktop": 5
+  //     }
+  //   }
+  // },
+
+  // "flex-layout.row#pickup-availability-title": {
+  //   "children": ["icon#home", "rich-text#pickup-availability-title"],
+  //   "props": {
+  //     "border": "bottom",
+  //     "borderColor": "muted-4",
+  //     "borderWidth": 0,
+  //     "blockClass": ["items-center", "justify-center"],
+  //     "colGap": 5,
+  //     "colSizing": "auto",
+  //     "fullWidth": true,
+  //     "marginBottom": {
+  //       "mobile": 3,
+  //       "desktop": 5
+  //     },
+  //     "paddingBottom": {
+  //       "mobile": 4,
+  //       "desktop": 6
+  //     },
+  //     "preserveLayoutOnMobile": true,
+  //     "preventHorizontalStretch": true,
+  //     "preventVerticalStretch": true
+  //   }
+  // },
+
+  // "icon#home": {
+  //   "props": {
+  //     "id": "mpa-home",
+  //     "size": "22",
+  //     "viewBox": "0 0 22 24"
+  //   }
+  // },
+
+  // "rich-text#pickup-availability-title": {
+  //   "props": {
+  //     "blockClass": ["reset-spacing"],
+  //     "text": "##### Pickup",
+  //     "font": "t-heading-5"
+  //   }
+  // },
+
+  // "rich-text#pickup-availability-text": {
+  //   "props": {
+  //     "blockClass": ["reset-spacing", "fw5", "black-medium"],
+  //     "text": "Choose an address to find a store",
+  //     "font": "t-small",
+  //     "textAlignment": "CENTER",
+  //     "textPosition": "CENTER"
+  //   }
+  // },
+
+  // "pickup-availability#default": {
+  //   "props": {
+  //     "blockClass": "default"
+  //   }
+  // }
+}

@@ -1,0 +1,27 @@
+{
+  "condition-layout.product#sku-selector-or-list": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "productId",
+          "arguments": { "id": 1 }
+        }
+      ],
+      "Then": "flex-layout.row#sku-list",
+      "Else": "flex-layout.row#sku-selector"
+    }
+  },
+
+  "flex-layout.row#sku-selector": {
+    "children": ["sku-selector#desktop"]
+  },
+
+  "sku-selector#desktop": {
+    "props": {
+      "blockClass": ["desktop", "color-round"],
+      "variationsSpacing": 0,
+      "showValueNameForImageVariation": true,
+      "showValueForVariation": "all"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "store.custom#not-allow": {
+    "blocks": [
+      "rich-text#notAllowed"
+    ]
+  },
+  "rich-text#notAllowed": {
+    "props": {
+      "text": "## Sorry! You're not allowed to access the site.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  }
+}

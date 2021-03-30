@@ -1,0 +1,49 @@
+{
+  "flex-layout.row#fake-summary": {
+    "children": [
+      "product-images#fake-summary",
+      "flex-layout.col#fake-summary-details"
+    ],
+    "props": {
+      "blockClass": ["items-center", "fake-summary", "visible-sticky"],
+      "colSizing": "auto",
+      "colGap": 5,
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    }
+  },
+
+  "product-images#fake-summary": {
+    "props": {
+      "blockClass": "fake-summary",
+      "aspectRatio": "1:1",
+      "displayThumbnailsArrows": false,
+      "maxHeight": 96,
+      "showNavigationArrows": false,
+      "showPaginationDots": false,
+      "thumbnailMaxHeight": 0,
+      "zoomMode": "disabled",
+      "contentType": "images"
+    }
+  },
+
+  "flex-layout.col#fake-summary-details": {
+    "children": [
+      "vtex.store-components:product-name#fake-summary",
+      "product-sku-attributes#fake-summary"
+    ]
+  },
+
+  "product-sku-attributes#fake-summary": {
+    "props": {
+      "blockClass": ["fake-summary", "inline"]
+    }
+  },
+
+  "vtex.store-components:product-name#fake-summary": {
+    "props": {
+      "blockClass": "fake-summary"
+    }
+  }
+}

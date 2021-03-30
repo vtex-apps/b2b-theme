@@ -1,0 +1,57 @@
+{
+  "challenge-permission#sticky-buy": {
+    "blocks": ["allowed-content#sticky-buy"],
+    "props": {
+      "permissions": [{ "name": "view_prices" }]
+    }
+  },
+  "allowed-content#sticky-buy": {
+    "children": ["sticky-layout#stickyBuy"]
+  },
+
+  "sticky-layout#stickyBuy": {
+    "children": ["flex-layout.row#stickyBuyRow"],
+    "props": {
+      "blockClass": ["stickyBuy"],
+      "position": "bottom",
+      "verticalSpacing": 0
+    }
+  },
+  "flex-layout.row#stickyBuyRow": {
+    "children": ["flex-layout.col#prices", "add-to-cart-button#buy-now-sticky"],
+    "props": {
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "flex-layout.col#prices": {
+    "children": [
+      "product-selling-price#sticky",
+      "flex-layout.row#priceSavingsSticky"
+    ]
+  },
+  "add-to-cart-button#buy-now-sticky": {
+    "props": {
+      "blockClass": "buy-now",
+      "text": "Add to cart",
+      "addToCartFeedback": "customEvent",
+      "customPixelEventId": "add-to-cart-button"
+    }
+  },
+  "product-selling-price#sticky": {
+    "props": {
+      "blockClass": "sticky",
+      "message": "{sellingPriceWithTax}"
+    }
+  },
+  "flex-layout.row#priceSavingsSticky": {
+    "children": [
+      "product-price-savings#desktop",
+      "product-price-savings#percentage"
+    ],
+    "props": {
+      "blockClass": "stickyPriceRow",
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true
+    }
+  }
+}

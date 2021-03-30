@@ -1,0 +1,74 @@
+{
+  "store.custom#product-comparison-list": {
+    "path": "/product-comparison"
+  },
+  "store.custom#registration": {
+    "path": "/registration"
+  },
+  "store.custom#quickOrderByOne": {
+    "path": "/quickorder/one-by-one"
+  },
+  "store.custom#quickOrderByCategory": {
+    "path": "/quickorder/by-category"
+  },
+  "store.custom#not-allow": {
+    "path": "not-allowed"
+  },
+  "store.custom.product-comparison#deals": {
+    "path": "/deals"
+  },
+  "store.custom.product-comparison#releases": {
+    "path": "/releases"
+  },
+  "store.custom.product-comparison#top-sales": {
+    "path": "/top-sales"
+  },
+  "store.custom#customer-services": {
+    "path": "/services"
+  },
+  "store.custom#gift-cards": {
+    "path": "/gift-cards"
+  },
+  "store.custom.product-comparison#popular": {
+    "path": "/popular"
+  },
+  "store.custom.product-comparison#trending": {
+    "path": "/trending"
+  },
+  "store.custom#company": {
+    "path": "/company"
+  },
+  "store.custom#careers": {
+    "path": "/careers"
+  },
+  "store.custom#sell": {
+    "path": "/sell"
+  },
+  "store.custom#investors": {
+    "path": "/investors"
+  },
+  "store.custom#advertise": {
+    "path": "/advertise"
+  },
+  "store.custom#locations": {
+    "path": "/locations"
+  },
+  "store.custom#accessibility": {
+    "path": "/accessibility"
+  },
+  "store.custom#contact": {
+    "path": "/contact"
+  },
+  "store.custom#help-center": {
+    "path": "/help-center"
+  },
+  "store.custom#pickup": {
+    "path": "/pickup"
+  },
+  "store.custom#recalls": {
+    "path": "/recalls"
+  },
+  "store.custom#returns": {
+    "path": "/returns"
+  }
+}

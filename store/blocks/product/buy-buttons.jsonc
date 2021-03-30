@@ -1,0 +1,38 @@
+{
+  "flex-layout.row#buy-buttons": {
+    "children": ["flex-layout.col#buy-buttons"],
+    "props": {
+      "blockClass": "buy-buttons"
+    }
+  },
+
+  "flex-layout.col#buy-buttons": {
+    "children": ["flex-layout.row#add-to-cart", "flex-layout.row#buy-now"],
+    "props": {
+      "blockClass": "buy-buttons",
+      "rowGap": 3
+    }
+  },
+
+  "flex-layout.row#add-to-cart": {
+    "children": ["add-to-cart-button"],
+    "props": {
+      "blockClass": "add-to-cart"
+    }
+  },
+
+  "flex-layout.row#buy-now": {
+    "children": ["add-to-cart-button#buy-now"],
+    "props": {
+      "blockClass": "buy-now"
+    }
+  },
+
+  "add-to-cart-button#buy-now": {
+    "props": {
+      "blockClass": "buy-now",
+      "isOneClickBuy": true,
+      "text": "Buy Now"
+    }
+  }
+}

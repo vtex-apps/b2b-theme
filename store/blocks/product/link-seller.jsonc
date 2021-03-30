@@ -1,0 +1,10 @@
+{
+  "flex-layout.row#link-seller": {
+    "children": ["link-seller#default"]
+  },
+  "link-seller#default": {
+    "props": {
+      "blockClass": "default"
+    }
+  }
+}

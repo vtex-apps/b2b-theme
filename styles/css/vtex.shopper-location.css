@@ -1,0 +1,4 @@
+.changeLocationContainer :global(.vtex-input-prefix__group),
+.changeLocationContainer :global(.vtex-address-form-4-x-container) {
+  border: 1px solid #A3AFBC;
+}

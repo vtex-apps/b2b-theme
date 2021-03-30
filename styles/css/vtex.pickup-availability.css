@@ -1,0 +1,144 @@
+.container--default,
+.container--default
+  :not(:global(.vtex-fake)):not(.storeListItem--default):not(.storeListContainer--default):not(.chooseDifferentStoreButton--default) {
+  font-size: 0.875rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.container--default {
+  text-align: center;
+}
+
+@media (min-width: 40rem) {
+  .container--default {
+    width: 18rem;
+  }
+}
+
+.container--default :global(.vtex-input-prefix__group) {
+  border-width: 0.0625rem;
+  border-color: var(--lines-dark);
+  height: 2.75rem;
+}
+
+.container--default
+  :not(:global(.vtex-input)):not(.storeListContainer--default):not(:global(.vtex-styleguide-9-x-input)):not(.availableAtHeader--default):not(.storeList--default):not(.storeSelectedContainer--default) {
+  font-size: 0;
+}
+
+.storeSelectedContainer--default,
+.storeListContainer--default {
+  font-size: 0.875rem;
+  text-align: left;
+}
+
+.storeListContainer--default :not(:global(.vtex-fake)),
+.storeSelectedContainer--default :not(:global(.vtex-fake)) {
+  font-size: inherit !important;
+}
+
+.storeListContainer--default :global(.vtex-radio__fakeRadioContainer),
+.storeListContainer--default :global(.vtex-radio__label) {
+  display: none;
+}
+
+.storeListContainer--default :global(.vtex-radio__input) {
+  display: inline-block;
+  height: 0.8125rem !important;
+  opacity: 1;
+  position: static;
+  width: 0.8125rem !important;
+}
+
+.storeListContainer--default :global(.vtex-radio) {
+  align-items: center;
+  background-color: #f3f9ff;
+  border-right: 1px solid #dee7ef;
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  padding: 32px 16px;
+  width: 53px;
+}
+
+.storeListItem--default {
+  background-color: #fff;
+  border: 1px solid var(--lines-light);
+  border-radius: 0.25rem;
+  padding: 0;
+  margin-bottom: 0.5rem;
+}
+
+.storeListItem--default:last-child {
+  margin-bottom: 0;
+}
+
+.storeListItem--default :not(:global(.vtex-fake)) {
+  margin: 0;
+}
+
+.storeListItem--default:focus {
+  outline: none;
+}
+
+.pickupItem--default {
+  align-self: center;
+  display: flex;
+  line-height: 1.4285714286;
+  padding: 1rem;
+  width: 100%;
+}
+
+.pickupName--default,
+.pickupEstimate--default,
+.pickupUnavailable--default {
+  font-weight: 500;
+}
+
+.pickupEstimate--default,
+.estimateTranslated--default {
+  display: inline !important;
+  color: var(--green-dark);
+}
+
+.pickupUnavailable--default {
+  color: var(--serious-orange);
+}
+
+.storeListContainer--default {
+  margin: 0;
+  margin-top: 1rem;
+  padding: 0;
+}
+
+.availableAtHeader--default,
+.availabilityHeader--default {
+  display: none;
+}
+
+.storeSelectedContainer--default .pickupItem--default {
+  border-radius: 0.25rem;
+  background-color: #fff;
+  border: 1px solid var(--lines-light);
+}
+
+.chooseDifferentStoreButton--default {
+  margin-top: 1rem;
+}
+
+.chooseDifferentStoreButton--default :global(.vtex-button) {
+  background-color: var(--fresh-blue);
+  color: #fff;
+  height: 3rem;
+  width: 100%;
+}
+
+.chooseDifferentStoreButtonText--default {
+  font-weight: 500;
+  text-transform: uppercase;
+}

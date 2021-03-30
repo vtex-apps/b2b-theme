@@ -1,0 +1,251 @@
+{
+  "drawer": {
+    "children": ["flex-layout.row#menu-header"],
+    "props": {
+      "blockClass": "menuDrawer",
+      "maxWidth": 384
+    }
+  },
+  "flex-layout.row#menu-header": {
+    "props": {
+      "blockClass": "menuHeader"
+    },
+    "children": ["flex-layout.col#menu-header"]
+  },
+  "flex-layout.col#menu-header": {
+    "children": [
+      "login#drawer",
+      // Deprecated
+      // "locale-switcher#drawer",
+      "rich-text#explore",
+      "menu#drawer",
+      "flex-layout.row#quickOrder"
+    ],
+    "props": {
+      "blockClass": "drawerInnerCol"
+    }
+  },
+  // Deprecated
+  // "locale-switcher#drawer": {
+  //   "props": {
+  //     "blockClass": "locationDrawer"
+  //   }
+  // },
+  "link#reseller": {
+    "props": {
+      "label": "Become a seller",
+      "href": "/registration",
+      "blockClass": "resellerLink"
+    }
+  },
+  "flex-layout.row#quickOrder": {
+    "children": ["link#quickOrder"]
+  },
+  "link#quickOrder": {
+    "children": ["rich-text#quickTitle", "rich-text#quickText"],
+    "props": {
+      "blockClass": "quickLink",
+      "href": "/quickorder"
+    }
+  },
+  "rich-text#quickTitle": {
+    "props": {
+      "text": "## Quick Order",
+      "blockClass": "quickTitle"
+    }
+  },
+  "rich-text#quickText": {
+    "props": {
+      "text": "Shop products with a few clicks",
+      "blockClass": "quickText"
+    }
+  },
+  "login#drawer": {
+    "props": {
+      "blockClass": "loginDrawer",
+      "iconLabel": "Hello, sign in",
+      "mirrorTooltipToRight": true
+    }
+  },
+  "rich-text#explore": {
+    "props": {
+      "text": "## Explore",
+      "blockClass": "menuTitle"
+    }
+  },
+  "menu#drawer": {
+    "props": {
+      "blockClass": "menuDrawer"
+    },
+    "children": [
+      "menu-item#apparel",
+      "menu-item#foodBeverage",
+      "menu-item#sporting",
+      "menu-item#agribusiness",
+      "menu-item#home",
+      "menu-item#software",
+      "menu-item#power-tools",
+      "menu-item#security"
+    ]
+  },
+  "menu-item#apparel": {
+    "props": {
+      "id": "menu-item-apparel",
+      "type": "category",
+      "highlight": false,
+      "blockClass": "departItem",
+      "iconPosition": "right",
+      "itemProps": {
+        "text": "Apparel",
+        "categoryId": "9281"
+      },
+      "iconProps": {
+        "id": "nav-thin-caret--right",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "active",
+        "mutedClassName": "menuItemIcon"
+      }
+    }
+  },
+  "menu-item#foodBeverage": {
+    "props": {
+      "id": "menu-item-food",
+      "type": "category",
+      "iconPosition": "right",
+      "highlight": false,
+      "blockClass": "departItem",
+      "itemProps": {
+        "text": "Food & Beverage",
+        "categoryId": "9282"
+      },
+      "iconProps": {
+        "id": "nav-thin-caret--right",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "active",
+        "mutedClassName": "menuItemIcon"
+      }
+    }
+  },
+  "menu-item#sporting": {
+    "props": {
+      "id": "menu-item-sporting",
+      "type": "category",
+      "iconPosition": "right",
+      "highlight": false,
+      "blockClass": "departItem",
+      "itemProps": {
+        "text": "Sporting",
+        "categoryId": "9283"
+      },
+      "iconProps": {
+        "id": "nav-thin-caret--right",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "active",
+        "mutedClassName": "menuItemIcon"
+      }
+    }
+  },
+  "menu-item#agribusiness": {
+    "props": {
+      "id": "menu-item-agri",
+      "type": "category",
+      "iconPosition": "right",
+      "highlight": false,
+      "blockClass": "departItem",
+      "itemProps": {
+        "text": "Agribusiness",
+        "categoryId": "9284"
+      },
+      "iconProps": {
+        "id": "nav-thin-caret--right",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "active",
+        "mutedClassName": "menuItemIcon"
+      }
+    }
+  },
+  "menu-item#home": {
+    "props": {
+      "id": "menu-item-hme",
+      "type": "category",
+      "iconPosition": "right",
+      "highlight": false,
+      "blockClass": "departItem",
+      "itemProps": {
+        "text": "Home Appliance",
+        "categoryId": "9285"
+      },
+      "iconProps": {
+        "id": "nav-thin-caret--right",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "active",
+        "mutedClassName": "menuItemIcon"
+      }
+    }
+  },
+  "menu-item#software": {
+    "props": {
+      "id": "menu-item-software",
+      "type": "category",
+      "iconPosition": "right",
+      "highlight": false,
+      "blockClass": "departItem",
+      "itemProps": {
+        "text": "Computer & Software",
+        "categoryId": "9286"
+      },
+      "iconProps": {
+        "id": "nav-thin-caret--right",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "active",
+        "mutedClassName": "menuItemIcon"
+      }
+    }
+  },
+  "menu-item#power-tools": {
+    "props": {
+      "id": "menu-item-power-tools",
+      "type": "category",
+      "iconPosition": "right",
+      "highlight": false,
+      "blockClass": "departItem",
+      "itemProps": {
+        "text": "Power Tools",
+        "categoryId": "9287"
+      },
+      "iconProps": {
+        "id": "nav-thin-caret--right",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "active",
+        "mutedClassName": "menuItemIcon"
+      }
+    }
+  },
+  "menu-item#security": {
+    "props": {
+      "id": "menu-item-security",
+      "type": "category",
+      "iconPosition": "right",
+      "highlight": false,
+      "blockClass": "departItem",
+      "itemProps": {
+        "text": "Security",
+        "categoryId": "9288"
+      },
+      "iconProps": {
+        "id": "nav-thin-caret--right",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "active",
+        "mutedClassName": "menuItemIcon"
+      }
+    }
+  }
+}

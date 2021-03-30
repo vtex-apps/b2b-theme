@@ -1,0 +1,30 @@
+{
+  "store.custom#pickup": {
+    "blocks": [
+      "flex-layout.row#institutional--pickup",
+      "flex-layout.row#newsletter"
+    ]
+  },
+
+  "flex-layout.row#institutional--pickup": {
+    "children": ["flex-layout.col#text--pickup", "image#mobile-phone"]
+  },
+
+  "flex-layout.col#text--pickup": {
+    "children": [
+      "rich-text#title--pickup",
+      "rich-text#institutional-placeholder"
+    ],
+    "props": {
+      "blockclass": "textColumn",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#title--pickup": {
+    "props": {
+      "text": "# Store Pickup",
+      "blockClass": "title"
+    }
+  }
+}

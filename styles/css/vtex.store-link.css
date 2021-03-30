@@ -1,0 +1,195 @@
+.link--popularLink,
+.link--trendingLink {
+  text-decoration: none;
+}
+
+.label--popularLink,
+.label--trendingLink {
+  color: #0067c7;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.label--popularLink::after,
+.label--trendingLink::after {
+  content: url("assets/icons/chevronBlue.svg");
+  margin-left: 8px;
+  top: 1px;
+  position: relative;
+}
+
+.link--networkLink {
+  width: 32px;
+  height: 32px;
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link--shopByLink {
+  width: 100%;
+  text-decoration: none;
+}
+
+.link--shopByLink:hover :global(.vtex-rich-text-0-x-paragraph--shopByCategory) {
+  color: #0067c7;
+}
+
+.link--shopByLink:hover .childrenContainer {
+  border: 1px solid #0067c7;
+}
+
+.childrenContainer--shopByLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  max-width: 216px;
+  height: 196px;
+  background: #f3f9ff;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.childrenContainer--linkCategorySlider {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.link--linkCategorySlider {
+  text-decoration: none;
+}
+
+.link--blogLink {
+  display: block;
+  max-width: 100px;
+  width: 100%;
+  height: 32px;
+  font-size: 14px;
+  line-height: 32px;
+  text-align: center;
+  color: #0067c7;
+  background: #f3f9ff;
+  text-decoration: none;
+}
+
+.childrenContainer--linkMail,
+.childrenContainer--linkCall {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  height: 48px;
+  padding: 0px 20px;
+  border-radius: 4px;
+  max-width: 280px;
+  width: 100%;
+}
+
+.childrenContainer--linkCall {
+  background: var(--b2b-header-blue-medium);
+}
+
+.childrenContainer--linkMail {
+  border: 1px solid var(--b2b-header-blue-medium);
+}
+
+.link--linkCall,
+.link--linkMail {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  font-family: Roboto;
+  text-decoration: none;
+}
+
+.link--linkCall :global(.vtex-store-components-3-x-imageElement),
+.link--linkMail :global(.vtex-store-components-3-x-imageElement) {
+  margin-right: 12px;
+}
+
+.link--linkCall {
+  margin-bottom: 12px;
+  display: block;
+}
+
+.link--quickLink {
+  text-decoration: none;
+  position: relative;
+}
+
+.link--quickLink::after {
+  content: url("assets/icons/nav-arrow-right.svg");
+  display: block;
+  position: absolute;
+  color: #717786;
+  right: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.link--quickOrderButton {
+  text-decoration: none;
+  padding: 24px;
+  background: #f2f5f9;
+  border: 1px solid #dee7ef;
+  display: block;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.link--quickOrderButton::after {
+  content: url("assets/icons/nav-arrow-right-blue.svg");
+  display: block;
+  position: absolute;
+  color: #717786;
+  right: 12px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.link--orderQuote,
+.link--resellerLink {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  height: 100%;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+@media (max-width: 64rem) {
+  .childrenContainer--accountLink :global(.vtex-store-icons-0-x-profileIcon) {
+    color: #fff;
+    width: 20px;
+    height: 20px;
+  }
+
+  .link--footerLink {
+    color: #fff;
+    font-size: 16px;
+    line-height: 48px;
+    font-weight: 500;
+    font-family: Roboto;
+    text-decoration: none;
+  }
+
+  .link--networkLink {
+    width: 32px;
+    height: 32px;
+    background: rgba(255, 255, 255, 0.16);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

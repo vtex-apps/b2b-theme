@@ -1,0 +1,24 @@
+:global(.vtex-store__template),
+:global(.vtex-modal-layout-0-x-container),
+:global(.vtex-minicart-2-x-drawer),
+:global(.vtex-telemarketing-2-x-portalContainer),
+:global(.vtex-login-2-x-portalContainer) {
+  --black-dark: #000000;
+  --fresh-blue: #0067c7;
+  --fresh-blue-dark: #0067c7;
+  --fresh-blue-lightest: #f3f9ff;
+  --fresh-orange: #ff5f00;
+  --fresh-darkest: #003364;
+  --green-dark: #468a2e;
+  --black-medium: #717786;
+  --b2b-header-blue-medium: #597298;
+  --blue-medium: #597298;
+  --b2b-blue-darkest: #1b3255;
+  --lines-dark: #bdc9d6;
+  --lines-darker: #a3afbc;
+  --lines-light: #dee7ef;
+  --serious-blue-dark: #214d8e;
+  --serious-black: #142032;
+  --serious-orange: #ff7d30;
+  --base: #fff;
+}

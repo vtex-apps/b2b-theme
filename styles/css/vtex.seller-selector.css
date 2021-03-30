@@ -1,0 +1,142 @@
+.sellerMasterContainer {
+  max-width: 1440px;
+  width: 100%;
+  padding: 32px 32px 0px;
+  margin: 0px auto;
+}
+
+.sellerHead {
+  border-radius: 0px;
+  background: #dee7ef;
+}
+
+.sellerRow {
+  padding: 16px 0px;
+  border: none;
+  border-bottom: 1px solid #dee7ef;
+}
+
+.sellerRow:first-child {
+  border-top: 1px solid #dee7ef;
+}
+
+.sellerList,
+.sellerHead {
+  margin-left: 0;
+  margin-right: 0;
+  flex: 100%;
+}
+
+.sellerPriceShippingText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sellerBuyContainer :global(.vtex-button) {
+  height: 48px;
+  border-radius: 4px;
+  background: var(--fresh-orange);
+  border: none;
+  outline: none;
+}
+
+.sellerMasterContainer {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.simulateShipping,
+.sellerMasterContainer
+  :global(.vtex-store-components-3-x-productNameContainer) {
+  flex: 50%;
+}
+
+.sellerMasterContainer
+  :global(.vtex-store-components-3-x-productNameContainer) {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.simulateShipping {
+  display: flex;
+  flex-flow: column;
+  border: none;
+  padding: 0;
+}
+
+.simulateShipping :global(.vtex-button) {
+  margin: 0;
+  border: none;
+  height: 48px;
+  background: var(--fresh-orange);
+  margin-top: 16px;
+  outline: none;
+  border-radius: 4px;
+}
+
+@media (max-width: 64rem) {
+  .sellerMasterContainer
+    :global(.vtex-store-components-3-x-productNameContainer) {
+    text-align: left;
+  }
+
+  .simulateShipping {
+    margin: 0;
+  }
+
+  .sellerName {
+    background: none;
+  }
+
+  .sellerBuyContainer {
+    padding: 0;
+  }
+}
+
+/* Link Seller */
+
+.linkSellerContainer--default {
+  display: block;
+  flex-direction: initial;
+}
+
+.linkSeller--default {
+  background-color: var(--fresh-blue-lightest);
+  border: 0.0625rem solid var(--lines-light);
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--black-medium);
+  text-decoration: none;
+  padding: 1.1875rem 1.25rem;
+  width: 100%;
+}
+
+.linkSeller--default::after {
+  background-color: transparent;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("data:image/svg+xml,%3Csvg width='7' height='12' viewBox='0 0 7 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 11L6 6L1 1' stroke='%230067C7' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  content: "";
+  display: inline-block;
+  height: 0.75rem;
+  width: 0.4375rem;
+}
+
+.linkSellerText--default {
+  font-size: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.linkSellerText--default::before {
+  font-size: 0.875rem;
+  content: "See from other sellers";
+}

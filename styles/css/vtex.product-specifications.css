@@ -1,0 +1,20 @@
+.specificationName,
+.specificationValue {
+  font-size: 14px;
+}
+
+.specificationName {
+  color: #717786;
+}
+
+.specificationValue {
+  color: #000;
+}
+
+.specificationName--bullet-list {
+  display: block;
+  columns: auto 2;
+  line-height: 2.5;
+  width: 100%;
+  white-space: pre-wrap;
+}

@@ -1,0 +1,422 @@
+{
+  "store.home": {
+    "blocks": ["responsive-layout.desktop", "responsive-layout.mobile"]
+  },
+  "responsive-layout.desktop": {
+    "children": [
+      "flex-layout.row#imageList",
+      "flex-layout.row#shopByCategory",
+      // Deprecated
+      // "flex-layout.row#shopByBrand",
+      "flex-layout.row#shelf1",
+      "flex-layout.row#imageBanners",
+      "flex-layout.row#singleBanner",
+      "flex-layout.row#popular",
+      "flex-layout.row#trending",
+      "flex-layout.row#benefits",
+      "flex-layout.row#newsletter"
+    ]
+  },
+
+  "flex-layout.row#imageList": {
+    "props": {
+      "blockClass": "full-banner"
+    },
+    "children": ["list-context.image-list#homeBanners"]
+  },
+  "flex-layout.row#imageList--mobile": {
+    "props": {
+      "blockClass": ["full-banner", "full-banner--mobile"],
+      "fullWidth": true
+    },
+    "children": ["list-context.image-list#homeBanners"]
+  },
+  "list-context.image-list#homeBanners": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height": 328,
+      "images": [
+        {
+          "width": "1440px",
+          "image": "assets/placeholders/fullbannerDesktop.png",
+          "mobileImage": "assets/placeholders/fullbannerMobile.png",
+          "description": "something something"
+        },
+        {
+          "width": "1440px",
+          "image": "assets/placeholders/fullbannerDesktop.png",
+          "mobileImage": "assets/placeholders/fullbannerMobile.png",
+          "description": "something something"
+        }
+      ]
+    }
+  },
+  "slider-layout#demo-images": {
+    "props": {
+      "blockClass": ["homeSlider", "dotsCustom"],
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": false,
+      "showNavigationArrows": "desktopOnly"
+    }
+  },
+  "flex-layout.row#shopByCategory": {
+    "props": {
+      "blockClass": "shopByCategorySection"
+    },
+    "children": ["flex-layout.col#shopByCategory"]
+  },
+  "flex-layout.col#shopByCategory": {
+    "props": {
+      "blockClass": "shopByCategory"
+    },
+    "children": ["rich-text#shopByTitle", "flex-layout.row#categories"]
+  },
+  "rich-text#shopByTitle": {
+    "props": {
+      "text": "### Shop by category",
+      "blockClass": "shopByCategoryTitle"
+    }
+  },
+  "flex-layout.row#categories": {
+    "props": {
+      "blockClass": "shopByCategory",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "link#shoBy1",
+      "link#shoBy2",
+      "link#shoBy3",
+      "link#shoBy4",
+      "link#shoBy5",
+      "link#shoBy6"
+    ]
+  },
+  "link#shoBy1": {
+    "children": ["image#shoBy1", "rich-text#cat1"],
+    "props": {
+      "href": "/apparel",
+      "blockClass": "shopByLink"
+    }
+  },
+  "link#shoBy2": {
+    "children": ["image#shoBy2", "rich-text#cat2"],
+    "props": {
+      "href": "/beverage",
+      "blockClass": "shopByLink"
+    }
+  },
+  "link#shoBy3": {
+    "children": ["image#shoBy3", "rich-text#cat3"],
+    "props": {
+      "href": "/sporting",
+      "blockClass": "shopByLink"
+    }
+  },
+  "link#shoBy4": {
+    "children": ["image#shoBy4", "rich-text#cat4"],
+    "props": {
+      "href": "/Agribusiness",
+      "blockClass": "shopByLink"
+    }
+  },
+  "link#shoBy5": {
+    "children": ["image#shoBy5", "rich-text#cat5"],
+    "props": {
+      "href": "/home-appliance",
+      "blockClass": "shopByLink"
+    }
+  },
+  "link#shoBy6": {
+    "children": ["image#shoBy6", "rich-text#cat6"],
+    "props": {
+      "href": "/computer",
+      "blockClass": "shopByLink"
+    }
+  },
+  "image#shoBy1": {
+    "props": {
+      "src": "assets/placeholders/apparelPlaceholder.png",
+      "blockClass": "shoByImage"
+    }
+  },
+  "image#shoBy2": {
+    "props": {
+      "src": "assets/placeholders/beveragePlaceholder.png",
+      "blockClass": "shoByImage"
+    }
+  },
+  "image#shoBy3": {
+    "props": {
+      "src": "assets/placeholders/sportingPlaceholder.png",
+      "blockClass": "shoByImage"
+    }
+  },
+  "image#shoBy4": {
+    "props": {
+      "src": "assets/placeholders/agribusinessPlaceholder.png",
+      "blockClass": "shoByImage"
+    }
+  },
+  "image#shoBy5": {
+    "props": {
+      "src": "assets/placeholders/homeAppliancePlaceholder.png",
+      "blockClass": "shoByImage"
+    }
+  },
+  "image#shoBy6": {
+    "props": {
+      "src": "assets/placeholders/computerPlaceholder.png",
+      "blockClass": "shoByImage"
+    }
+  },
+  "rich-text#cat1": {
+    "props": {
+      "text": "Apparel",
+      "blockClass": "shopByCategory"
+    }
+  },
+  "rich-text#cat2": {
+    "props": {
+      "text": "Beverage",
+      "blockClass": "shopByCategory"
+    }
+  },
+  "rich-text#cat3": {
+    "props": {
+      "text": "Sporting",
+      "blockClass": "shopByCategory"
+    }
+  },
+  "rich-text#cat4": {
+    "props": {
+      "text": "Agribusiness",
+      "blockClass": "shopByCategory"
+    }
+  },
+  "rich-text#cat5": {
+    "props": {
+      "text": "Home Appliance",
+      "blockClass": "shopByCategory"
+    }
+  },
+  "rich-text#cat6": {
+    "props": {
+      "text": "Computer",
+      "blockClass": "shopByCategory"
+    }
+  },
+
+  // Deprecated
+  // "flex-layout.row#shopByBrand": {
+  //   "children": ["flex-layout.col#shopByBrand"]
+  // },
+  // "flex-layout.col#shopByBrand": {
+  //   "props": {
+  //     "blockClass": "shopByBrand"
+  //   },
+  //   "children": [
+  //     "rich-text#sectionTitle",
+  //     "list-context.image-list#brandImages"
+  //   ]
+  // },
+  // "rich-text#sectionTitle": {
+  //   "props": {
+  //     "text": "### Shop by brand",
+  //     "blockClass": "sectionTitle"
+  //   }
+  // },
+  // "list-context.image-list#brandImages": {
+  //   "children": ["slider-layout#brand-images"],
+  //   "props": {
+  //     "height": 328,
+  //     "images": [
+  //       {
+  //         "image": "assets/placeholders/AppleBrand.png",
+  //         "description": "something something",
+  //         "link": {
+  //           "url": "/apple"
+  //         }
+  //       },
+  //       {
+  //         "image": "assets/placeholders/AppleBrand.png",
+  //         "description": "something something",
+  //         "link": {
+  //           "url": "/apple"
+  //         }
+  //       },
+  //       {
+  //         "image": "assets/placeholders/AppleBrand.png",
+  //         "description": "something something",
+  //         "link": {
+  //           "url": "/apple"
+  //         }
+  //       },
+  //       {
+  //         "image": "assets/placeholders/AppleBrand.png",
+  //         "description": "something something",
+  //         "link": {
+  //           "url": "/apple"
+  //         }
+  //       },
+  //       {
+  //         "image": "assets/placeholders/AppleBrand.png",
+  //         "description": "something something",
+  //         "link": {
+  //           "url": "/apple"
+  //         }
+  //       },
+  //       {
+  //         "image": "assets/placeholders/AppleBrand.png",
+  //         "description": "something something",
+  //         "link": {
+  //           "url": "/apple"
+  //         }
+  //       }
+  //     ]
+  //   }
+  // },
+  // "slider-layout#brand-images": {
+  //   "props": {
+  //     "blockClass": "brandSlider",
+  //     "itemsPerPage": {
+  //       "desktop": 6,
+  //       "tablet": 4,
+  //       "phone": 3
+  //     },
+  //     "infinite": false
+  //   }
+  // },
+
+  "flex-layout.row#shelf1": {
+    "children": ["list-context.product-list#productSlider"],
+    "props": {
+      "blockClass": "shelfComplete"
+    }
+  },
+  "list-context.product-list#productSlider": {
+    "blocks": ["product-summary.shelf#complete"],
+    "children": ["slider-layout#products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 6,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": false,
+      "fullWidth": true,
+      "showPaginationDots": "desktopOnly",
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "shelfStyle1"
+    }
+  },
+  "slider-layout#productsMobile": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 6,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": false,
+      "fullWidth": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "shelfStyle1"
+    }
+  },
+  "flex-layout.row#imageBanners": {
+    "props": {
+      "blockClass": "imageBanners",
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "flex-layout.col#banner1",
+      "flex-layout.col#banner2",
+      "flex-layout.col#banner3"
+    ]
+  },
+  "flex-layout.col#banner1": {
+    "props": {
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "image#bannerThird",
+      "rich-text#bannerTitle",
+      "rich-text#bannerDesc",
+      "rich-text#bannerLink"
+    ]
+  },
+  "flex-layout.col#banner2": {
+    "props": {
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "image#bannerThird",
+      "rich-text#bannerTitle",
+      "rich-text#bannerDesc",
+      "rich-text#bannerLink"
+    ]
+  },
+  "flex-layout.col#banner3": {
+    "props": {
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "image#bannerThird",
+      "rich-text#bannerTitle",
+      "rich-text#bannerDesc",
+      "rich-text#bannerLink"
+    ]
+  },
+  "image#bannerThird": {
+    "props": {
+      "src": "assets/placeholders/bannerSummer.png",
+      "maxHeight": 256,
+      "blockClass": "bannerThird"
+    }
+  },
+  "rich-text#bannerTitle": {
+    "props": {
+      "text": "#### Keep cool with trusted air conditioning brands",
+      "blockClass": "bannerTitle",
+      "textAlignment": "CENTER"
+    }
+  },
+  "rich-text#bannerDesc": {
+    "props": {
+      "text": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
+      "blockClass": "bannerDesc",
+      "textAlignment": "CENTER"
+    }
+  },
+  "rich-text#bannerLink": {
+    "props": {
+      "text": "[BUY AIR CONDITIONING]()",
+      "blockClass": "bannerLink",
+      "textAlignment": "CENTER"
+    }
+  },
+  "flex-layout.row#singleBanner": {
+    "props": {
+      "blockClass": "singleBanner"
+    },
+    "children": ["image#singleBanner"]
+  },
+  "image#singleBanner": {
+    "props": {
+      "src": "",
+      "maxHeight": 256
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@media (max-width: 64rem) {
+  .categoryButtonAdd {
+    padding: 0;
+  }
+
+  .categoryButtonAdd :global(.vtex-button) {
+    width: 100%;
+    height: 48px;
+    background: #ff7d30;
+    border-radius: 4px;
+    display: block;
+    line-height: 48px;
+    border: none;
+    margin: 16px 0px 24px;
+  }
+
+  .categoryContainer .textContainer :not(:global(.vtex-fake)) {
+    margin: 0;
+  }
+}

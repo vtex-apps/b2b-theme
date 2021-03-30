@@ -1,0 +1,27 @@
+{
+  "flex-layout.row#breadcrumb": {
+    "children": ["flex-layout.col#breadcrumb"],
+    "props": {
+      "blockClass": "breadcrumb",
+      "paddingTop": {
+        "desktop": 5,
+        "mobile": 6
+      },
+      "marginBottom": {
+        "mobile": 6
+      }
+    }
+  },
+
+  "flex-layout.col#breadcrumb": {
+    "children": ["breadcrumb#default"]
+  },
+
+  "breadcrumb#default": {
+    "props": {
+      "blockClass": ["default"],
+      "showOnMobile": true,
+      "homeIconSize": 18
+    }
+  }
+}

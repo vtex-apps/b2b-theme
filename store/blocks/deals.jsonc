@@ -1,0 +1,71 @@
+{
+  "store.custom.product-comparison#deals": {
+    "blocks": [
+      "search-result-layout.customQuery#deals",
+      "flex-layout.row#newsletter"
+    ]
+  },
+
+  "search-result-layout.customQuery#deals": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByBestDiscountDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 10,
+        "skusFilter": "ALL",
+        "simulationBehavior": "skip"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop.product-comparison#deals",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  },
+  "search-result-layout.desktop.product-comparison#deals": {
+    "children": [
+      "flex-layout.row#searchLayout--deals",
+      "product-comparison-drawer"
+    ],
+    "props": {
+      "pagination": "show-more",
+      "preventRouteChange": true
+    }
+  },
+  "flex-layout.row#searchLayout--deals": {
+    "children": ["flex-layout.col#pageContent--deals"],
+    "props": {
+      "colSizing": "auto",
+      "fullWidth": true,
+      "marginBottom": 9
+    }
+  },
+  "flex-layout.col#pageContent--deals": {
+    "children": ["flex-layout.col#search-content--deals"],
+    "props": {
+      "blockClass": "pageContent",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.col#search-content--deals": {
+    "children": [
+      "rich-text#title--deals",
+      "flex-layout.row#searchinfo",
+      "flex-layout.row#fetchprevious",
+      "flex-layout.row#products",
+      "flex-layout.row#fetchmore"
+    ],
+    "props": {
+      "paddingLeft": 7,
+      "paddingRight": 7
+    }
+  },
+
+  "rich-text#title--deals": {
+    "props": {
+      "text": "## Today's Deals",
+      "blockClass": "title"
+    }
+  }
+}

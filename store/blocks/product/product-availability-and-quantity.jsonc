@@ -1,0 +1,28 @@
+{
+  "flex-layout.row#product-availability-and-quantity": {
+    "children": ["product-availability#desktop", "product-quantity#desktop"],
+    "props": {
+      "blockClass": ["items-center", "product-availability-and-quantity"],
+      "colGap": 0,
+      "preserveLayoutOnMobile": true,
+      "preventVerticalStretch": true
+    }
+  },
+
+  "product-availability#desktop": {
+    "props": {
+      "blockClass": "desktop",
+      "threshold": "10",
+      "lowStockMessage": "Only {quantity} left!",
+      "highStockMessage": "Item in stock!"
+    }
+  },
+
+  "product-quantity#desktop": {
+    "props": {
+      "blockClass": ["desktop"],
+      "selectorType": "dropdown",
+      "showLabel": false
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.removeButtonContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.productName--minicart {
+  color: var(--black-dark);
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.productImage {
+  height: 48px;
+  object-fit: contain;
+  width: 48px;
+}
+
+.productImageAnchor {
+  display: block;
+}
+
+.productImageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}

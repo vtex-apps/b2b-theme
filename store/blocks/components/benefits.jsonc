@@ -1,0 +1,96 @@
+{
+  "flex-layout.row#benefits": {
+    "props": {
+      "blockClass": "benefits"
+    },
+    "children": ["flex-layout.col#benefits"]
+  },
+  "flex-layout.col#benefits": {
+    "props": {},
+    "children": ["rich-text#whyShopWithVTEX", "slider-layout#benefits"]
+  },
+
+  "rich-text#whyShopWithVTEX": {
+    "props": {
+      "text": "### Why shop with VTEX",
+      "blockClass": "sectionTitle"
+    }
+  },
+
+  "slider-layout#benefits": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 2
+      },
+      "infinite": false,
+      "showNavigationArrows": "never",
+      "blockClass": "benefitsSlider"
+    },
+    "children": [
+      "flex-layout.row#benefitRow1",
+      "flex-layout.row#benefitRow2",
+      "flex-layout.row#benefitRow3",
+      "flex-layout.row#benefitRow4"
+    ]
+  },
+  "flex-layout.row#benefitRow1": {
+    "children": ["image#benefit", "rich-text#benefits1"],
+    "props": {
+      "blockClass": "flex-column",
+      "preventHorizontalStretch": true
+    }
+  },
+  "flex-layout.row#benefitRow2": {
+    "children": ["image#benefit", "rich-text#benefits1"],
+    "props": {
+      "blockClass": "flex-column",
+      "preventHorizontalStretch": true
+    }
+  },
+  "flex-layout.row#benefitRow3": {
+    "children": ["image#benefit", "rich-text#benefits1"],
+    "props": {
+      "blockClass": "flex-column",
+      "preventHorizontalStretch": true
+    }
+  },
+  "flex-layout.row#benefitRow4": {
+    "children": ["image#benefit", "rich-text#benefits1"],
+    "props": {
+      "blockClass": "flex-column",
+      "preventHorizontalStretch": true
+    }
+  },
+  "image#benefit": {
+    "props": {
+      "src": "assets/placeholders/truck.png",
+      "blockClass": "benefitImage"
+    }
+  },
+  "rich-text#benefits1": {
+    "props": {
+      "text": "**Free shipping** Over $50 in more than 1 million items",
+      "blockClass": "benefitsItem"
+    }
+  },
+  "rich-text#benefits2": {
+    "props": {
+      "text": "**Pick-up store** Over $50 in more than 1 million items",
+      "blockClass": "benefitsItem"
+    }
+  },
+  "rich-text#benefits3": {
+    "props": {
+      "text": "**Free shipping** Over $50 in more than 1 million items",
+      "blockClass": "benefitsItem"
+    }
+  },
+  "rich-text#benefits4": {
+    "props": {
+      "text": "**Pick-up store** Over $50 in more than 1 million items",
+      "blockClass": "benefitsItem"
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "sticky-layout#box": {
+    "children": ["flex-layout.row#box"],
+    "props": {
+      "blockClass": ["box"],
+      "position": "top",
+      "verticalSpacing": 186
+    }
+  },
+
+  "flex-layout.row#box": {
+    "children": ["flex-layout.col#box"],
+    "props": {
+      "blockClass": ["box"],
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.col#box": {
+    "children": [
+      "flex-layout.row#fake-summary",
+      "flex-layout.row#seller-name",
+      "challenge-permission#product-price"
+    ],
+    "props": {
+      "blockClass": ["box"],
+      "preventVerticalStretch": true
+    }
+  },
+
+  "challenge-permission#product-price": {
+    "blocks": [
+      "allowed-content#product-price",
+      "disallowed-content#product-price"
+    ],
+    "props": {
+      "permissions": [{ "name": "view_prices" }]
+    }
+  },
+  "allowed-content#product-price": {
+    "children": [
+      "flex-layout.row#product-price",
+      "flex-layout.row#location-availability",
+      "flex-layout.row#product-availability-and-quantity",
+      "flex-layout.row#buy-buttons"
+    ]
+  },
+  "disallowed-content#product-price": {
+    "children": ["rich-text#product-price"]
+  },
+  "rich-text#product-price": {
+    "props": {
+      "blockClass": ["product-price-message"],
+      "text": "Log in or sign up to view prices"
+    }
+  }
+}

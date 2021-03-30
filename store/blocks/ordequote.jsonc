@@ -1,0 +1,20 @@
+{
+  "store.orderquote": {
+    "blocks": ["orderquote"],
+    "parent": {
+      "challenge": "challenge.profile"
+    }
+  },
+  "store.create": {
+    "blocks": ["create"],
+    "parent": {
+      "challenge": "challenge.profile"
+    }
+  },
+  "store.view": {
+    "blocks": ["view"],
+    "parent": {
+      "challenge": "challenge.profile"
+    }
+  }
+}

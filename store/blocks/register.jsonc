@@ -1,0 +1,298 @@
+{
+  "store.custom#registration": {
+    "blocks": ["flex-layout.row#registration", "flex-layout.row#newsletter"]
+  },
+  "flex-layout.row#registration": {
+    "children": ["flex-layout.col#registration"],
+    "props": {
+      "marginBottom": 9
+    }
+  },
+  "flex-layout.col#registration": {
+    "children": [
+      "rich-text#registration__title",
+      "rich-text#registration__text",
+      "form#registration__form"
+    ]
+  },
+  "rich-text#registration__title": {
+    "props": {
+      "text": "# Become a partner",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#registration__text": {
+    "props": {
+      "text": "We offer all the support for our customers to provide better services and prosper in their business. We serve more than 20,000 partners across all over the world. Commercial consultants support their clients in the search for the best solutions to meet all types of demands."
+    }
+  },
+
+  "form#registration__form": {
+    "props": {
+      "entity": "Reseller",
+      "schema": "v2"
+    },
+    "children": ["flex-layout.row#form"],
+    "blocks": ["form-success"]
+  },
+
+  "flex-layout.row#form": {
+    "children": ["flex-layout.col#form"]
+  },
+
+  "flex-layout.col#form": {
+    "children": [
+      "flex-layout.row#form__section--contact",
+      "flex-layout.row#form__section--company",
+      "flex-layout.row#form__section--address",
+      "flex-layout.row#form__section--submit"
+    ],
+    "props": {
+      "rowGap": 7
+    }
+  },
+  "flex-layout.row#form__section--contact": {
+    "children": ["flex-layout.col#form__section--contact"]
+  },
+  "flex-layout.col#form__section--contact": {
+    "children": [
+      "rich-text#form__section__title--contact",
+      "flex-layout.row#form__section__fields--contact"
+    ],
+    "props": {
+      "rowGap": 3
+    }
+  },
+  "rich-text#form__section__title--contact": {
+    "props": {
+      "text": "**Your Contact**"
+    }
+  },
+  "flex-layout.row#form__section__fields--contact": {
+    "children": [
+      "flex-layout.col#form__section__fields--contact-left",
+      "flex-layout.col#form__section__fields--contact-right"
+    ],
+    "props": {
+      "colGap": 5
+    }
+  },
+  "flex-layout.col#form__section__fields--contact-left": {
+    "children": ["form-input.text#firstName", "form-input.text#homePhone"],
+    "props": {
+      "rowGap": 5
+    }
+  },
+  "form-input.text#firstName": {
+    "props": {
+      "pointer": "#/properties/firstName"
+    }
+  },
+  "form-input.text#homePhone": {
+    "props": {
+      "pointer": "#/properties/homePhone"
+    }
+  },
+  "flex-layout.col#form__section__fields--contact-right": {
+    "children": ["form-input.text#lastName"],
+    "props": {
+      "rowGap": 5
+    }
+  },
+  "form-input.text#lastName": {
+    "props": {
+      "pointer": "#/properties/lastName"
+    }
+  },
+
+  "flex-layout.row#form__section--company": {
+    "children": ["flex-layout.col#form__section--company"]
+  },
+  "flex-layout.col#form__section--company": {
+    "children": [
+      "rich-text#form__section__title--company",
+      "flex-layout.row#form__section__fields--company"
+    ],
+    "props": {
+      "rowGap": 3
+    }
+  },
+  "rich-text#form__section__title--company": {
+    "props": {
+      "text": "**Your company**",
+      "blockClass": "form-section-title"
+    }
+  },
+  "flex-layout.row#form__section__fields--company": {
+    "children": [
+      "flex-layout.col#form__section__fields--company-left",
+      "flex-layout.col#form__section__fields--company-right"
+    ],
+    "props": {
+      "colGap": 5
+    }
+  },
+  "flex-layout.col#form__section__fields--company-left": {
+    "children": [
+      "form-input.text#corporateName",
+      "form-input.text#stateRegistration",
+      "form-input.text#email"
+    ],
+    "props": {
+      "rowGap": 5
+    }
+  },
+  "form-input.text#corporateName": {
+    "props": {
+      "pointer": "#/properties/corporateName",
+      "label": "Company name: "
+    }
+  },
+  "form-input.text#stateRegistration": {
+    "props": {
+      "pointer": "#/properties/stateRegistration"
+    }
+  },
+  "form-input.text#email": {
+    "props": {
+      "pointer": "#/properties/email"
+    }
+  },
+  "flex-layout.col#form__section__fields--company-right": {
+    "children": [
+      "form-input.text#corporateDocument",
+      "form-input.text#tradeName",
+      "form-input.text#phone"
+    ],
+    "props": {
+      "rowGap": 5
+    }
+  },
+  "form-input.text#corporateDocument": {
+    "props": {
+      "pointer": "#/properties/corporateDocument"
+    }
+  },
+  "form-input.text#tradeName": {
+    "props": {
+      "pointer": "#/properties/tradeName"
+    }
+  },
+  "form-input.text#phone": {
+    "props": {
+      "pointer": "#/properties/phone"
+    }
+  },
+
+  "flex-layout.row#form__section--address": {
+    "children": ["flex-layout.col#form__section--address"]
+  },
+  "flex-layout.col#form__section--address": {
+    "children": [
+      "rich-text#form__section__title--address",
+      "flex-layout.row#form__section__fields--address"
+    ],
+    "props": {
+      "rowGap": 3
+    }
+  },
+  "rich-text#form__section__title--address": {
+    "props": {
+      "text": "**Company Address**",
+      "blockClass": "form-section-title"
+    }
+  },
+  "flex-layout.row#form__section__fields--address": {
+    "children": [
+      "flex-layout.col#form__section__fields--address-left",
+      "flex-layout.col#form__section__fields--address-right"
+    ],
+    "props": {
+      "colGap": 5
+    }
+  },
+  "flex-layout.col#form__section__fields--address-left": {
+    "children": [
+      "form-input.dropdown#streetType",
+      "form-input.text#number",
+      "form-input.text#neighborhood",
+      "form-input.dropdown#state"
+    ],
+    "props": {
+      "rowGap": 5
+    }
+  },
+  "form-input.dropdown#streetType": {
+    "props": {
+      "pointer": "#/properties/streetType"
+    }
+  },
+  "form-input.text#number": {
+    "props": {
+      "pointer": "#/properties/number"
+    }
+  },
+  "form-input.text#neighborhood": {
+    "props": {
+      "pointer": "#/properties/neighborhood"
+    }
+  },
+  "form-input.dropdown#state": {
+    "props": {
+      "pointer": "#/properties/state"
+    }
+  },
+  "flex-layout.col#form__section__fields--address-right": {
+    "children": [
+      "form-input.text#street",
+      "form-input.text#complement",
+      "form-input.text#city",
+      "form-input.text#postalCode"
+    ],
+    "props": {
+      "rowGap": 5
+    }
+  },
+  "form-input.text#street": {
+    "props": {
+      "pointer": "#/properties/street"
+    }
+  },
+  "form-input.text#complement": {
+    "props": {
+      "pointer": "#/properties/complement"
+    }
+  },
+  "form-input.text#city": {
+    "props": {
+      "pointer": "#/properties/city"
+    }
+  },
+  "form-input.text#postalCode": {
+    "props": {
+      "pointer": "#/properties/postalCode"
+    }
+  },
+
+  "flex-layout.row#form__section--submit": {
+    "children": ["flex-layout.col#form__section--submit"]
+  },
+  "flex-layout.col#form__section--submit": {
+    "children": ["form-submit"],
+    "props": {
+      "horizontalAlign": "right"
+    }
+  },
+
+  "form-success": {
+    "children": ["rich-text#successSubmit"]
+  },
+
+  "rich-text#successSubmit": {
+    "props": {
+      "text": "Data sent successfully. Within 48 hours we carry out the evaluation of your registration. We will send a reply to the email provided above.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  }
+}

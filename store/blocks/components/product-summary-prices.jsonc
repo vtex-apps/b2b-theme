@@ -1,0 +1,23 @@
+{
+  "challenge-permission#product-summary-price": {
+    "blocks": [
+      "allowed-content#product-summary-price",
+      "disallowed-content#product-summary-price"
+    ],
+    "props": {
+      "permissions": [{ "name": "view_prices" }]
+    }
+  },
+  "allowed-content#product-summary-price": {
+    "children": ["product-summary-price"]
+  },
+  "disallowed-content#product-summary-price": {
+    "children": ["rich-text#product-summary-price"]
+  },
+  "rich-text#product-summary-price": {
+    "props": {
+      "blockClass": ["product-summary-price-message"],
+      "text": "Log in or sign up to view prices"
+    }
+  }
+}

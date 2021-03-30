@@ -1,0 +1,8 @@
+{
+  "flex-layout.col#left-col": {
+    "children": ["product-images#desktop"],
+    "props": {
+      "blockClass": "left-col"
+    }
+  }
+}

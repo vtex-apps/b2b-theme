@@ -1,0 +1,155 @@
+{
+  "responsive-layout.mobile": {
+    "children": [
+      "flex-layout.row#imageList--mobile",
+      "flex-layout.row#shopByCategory",
+      // Deprecated
+      // "flex-layout.row#shopByBrandMobile",
+      "flex-layout.row#shelfMobile",
+      "flex-layout.row#banners",
+      "flex-layout.row#singleBannerMobile",
+      "flex-layout.row#popular",
+      "flex-layout.row#trending",
+      "flex-layout.row#benefits",
+      "flex-layout.row#newsletter"
+    ]
+  },
+
+  // Deprecated
+  // "flex-layout.row#shopByBrandMobile": {
+  //   "props": {
+  //     "blockClass": "shopByBrandSection"
+  //   },
+  //   "children": [
+  //     "flex-layout.row#shopByBrandHead",
+  //     "list-context.image-list#brandImagesMobile"
+  //   ]
+  // },
+  // "flex-layout.row#shopByBrandHead": {
+  //   "props": {
+  //     "blockClass": "shopByBrandHead",
+  //     "preventHorizontalStretch": true
+  //   },
+  //   "children": ["rich-text#sectionTitle", "rich-text#sectionLink"]
+  // },
+  // "rich-text#sectionLink": {
+  //   "props": {
+  //     "text": "[See all brands](/brands)",
+  //     "blockClass": "sectionLink"
+  //   }
+  // },
+  // "list-context.image-list#brandImagesMobile": {
+  //   "children": ["slider-layout#shopByBrand"],
+  //   "props": {
+  //     "height": 100,
+  //     "images": [
+  //       {
+  //         "image": "assets/placeholders/cokeBrand.png",
+  //         "mobileImage": "assets/placeholders/cokeBrand.png",
+  //         "description": "something something"
+  //       },
+  //       {
+  //         "image": "assets/placeholders/AppleBrand.png",
+  //         "mobileImage": "assets/placeholders/AppleBrand.png",
+  //         "description": "something something"
+  //       },
+  //       {
+  //         "image": "assets/placeholders/whirlpoolBrand.png",
+  //         "mobileImage": "assets/placeholders/whirlpoolBrand.png",
+  //         "description": "something something"
+  //       },
+  //       {
+  //         "image": "assets/placeholders/cokeBrand.png",
+  //         "mobileImage": "assets/placeholders/cokeBrand.png",
+  //         "description": "something something"
+  //       },
+  //       {
+  //         "image": "assets/placeholders/AppleBrand.png",
+  //         "mobileImage": "assets/placeholders/AppleBrand.png",
+  //         "description": "something something"
+  //       },
+  //       {
+  //         "image": "assets/placeholders/whirlpoolBrand.png",
+  //         "mobileImage": "assets/placeholders/whirlpoolBrand.png",
+  //         "description": "something something"
+  //       }
+  //     ]
+  //   }
+  // },
+  // "slider-layout#shopByBrand": {
+  //   "props": {
+  //     "blockClass": "brandSliderMobile",
+  //     "itemsPerPage": {
+  //       "phone": 3
+  //     },
+  //     "showNavigationArrows": "never",
+  //     "infinite": false
+  //   }
+  // },
+
+  "flex-layout.row#banners": {
+    "props": {
+      "blockClass": "bannersSection"
+    },
+    "children": ["flex-layout.col#banners"]
+  },
+  "flex-layout.col#banners": {
+    "children": ["rich-text#bannersSectionTitle", "slider-layout#banners"]
+  },
+  "rich-text#bannersSectionTitle": {
+    "props": {
+      "text": "### Summer essentials",
+      "blockClass": "titleWithBorder"
+    }
+  },
+  "slider-layout#banners": {
+    "props": {
+      "blockClass": "bannersSlider",
+      "itemsPerPage": {
+        "phone": 1
+      },
+      "showNavigationArrows": "never",
+      "infinite": false
+    },
+    "children": [
+      "flex-layout.row#banner1",
+      "flex-layout.row#banner2",
+      "flex-layout.row#banner3"
+    ]
+  },
+  "flex-layout.row#banner1": {
+    "children": ["flex-layout.col#banner1"]
+  },
+  "flex-layout.row#banner2": {
+    "children": ["flex-layout.col#banner2"]
+  },
+  "flex-layout.row#banner3": {
+    "children": ["flex-layout.col#banner3"]
+  },
+  "flex-layout.row#singleBannerMobile": {
+    "props": {
+      "blockClass": "singleBanner"
+    },
+    "children": ["image#singleBannerMobile"]
+  },
+  "image#singleBannerMobile": {
+    "props": {
+      "src": "assets/placeholders/singleBannerMobile.png",
+      "maxHeight": 160,
+      "blockClass": "singleBanner"
+    }
+  },
+  "flex-layout.row#shelfMobile": {
+    "children": ["list-context.product-list#productSliderMobile"],
+    "props": {
+      "blockClass": "shelfComplete"
+    }
+  },
+  "list-context.product-list#productSliderMobile": {
+    "blocks": ["product-summary.shelf#normal"],
+    "children": ["slider-layout#productsMobile"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  }
+}

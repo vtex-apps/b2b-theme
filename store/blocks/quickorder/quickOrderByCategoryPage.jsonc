@@ -1,0 +1,12 @@
+{
+  "store.custom#quickOrderByCategory": {
+    "children": ["flex-layout.row#quickCategoriesWrap"]
+  },
+  "flex-layout.row#quickCategoriesWrap": {
+    "children": ["flex-layout.row#quickCategories"],
+    "props": {
+      "blockClass": "quickOrderContainer",
+      "paddingBottom": 9
+    }
+  }
+}

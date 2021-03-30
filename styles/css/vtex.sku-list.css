@@ -1,0 +1,30 @@
+.skuContentWrapper {
+  cursor: pointer;
+  border-radius: 0;
+  border-width: 0.0625rem;
+  margin: 0 -0.5rem -0.0625rem;
+  padding: 0.5rem 1rem;
+}
+
+.skuContentWrapper:focus {
+  outline: none;
+}
+
+.skuContentWrapper:first-child {
+  margin-top: -0.5rem;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+.skuContentWrapper:last-child {
+  margin-bottom: -0.5rem;
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+
+.itemHighlight,
+.priceContainer,
+.inventoryContainer,
+.highlightContent {
+  padding: 0;
+}

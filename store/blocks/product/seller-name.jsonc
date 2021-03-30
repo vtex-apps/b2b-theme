@@ -1,0 +1,11 @@
+{
+  "flex-layout.row#seller-name": {
+    "children": ["product-seller-name#default"]
+  },
+  "product-seller-name#default": {
+    "props": {
+      "blockClass": ["default"],
+      "message": "Sold by {sellerName}"
+    }
+  }
+}

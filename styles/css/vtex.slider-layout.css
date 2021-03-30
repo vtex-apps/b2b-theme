@@ -1,0 +1,194 @@
+.sliderLayoutContainer:not(.sliderLayoutContainer--dotsCustom) {
+  padding-bottom: 26px;
+}
+
+.sliderArrows--homeSlider {
+  background-color: rgba(0, 51, 100, 0.32) !important;
+  background-repeat: no-repeat !important;
+  border-radius: 50%;
+  height: 48px;
+  padding: 0;
+  width: 48px;
+}
+
+.caretIcon--homeSlider {
+  display: none;
+}
+
+.sliderLeftArrow--homeSlider {
+  background-image: url("assets/icons/chevronLeftWhite.svg") !important;
+  background-position: 17px center !important;
+  left: 16px;
+}
+
+.sliderRightArrow--homeSlider {
+  background-image: url("assets/icons/chevronRightWhite.svg") !important;
+  background-position: 20px center !important;
+  right: 16px;
+}
+
+.paginationDotsContainer {
+  bottom: 16px;
+}
+
+.paginationDotsContainer--dotsCustom {
+  display: flex;
+  width: auto;
+  left: 50%;
+  right: initial;
+  transform: translateX(-50%);
+  bottom: 16px;
+  background: #fff;
+  border-radius: 40px;
+  padding: 2px 6px;
+  box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.16);
+  height: 20px;
+  align-items: center;
+}
+
+.paginationDot {
+  background-color: #bdc9d6;
+}
+
+.paginationDot.paginationDot--isActive {
+  background-color: #0067c7;
+}
+
+.sliderLayoutContainer--benefitsSlider {
+  margin-top: 44px;
+}
+
+.sliderTrackContainer {
+  max-width: 100%;
+}
+
+.sliderTrack--shelfStyle1 {
+  padding: 16px 0px;
+}
+
+/* BEGIN - Trending Shelf */
+
+.sliderTrack--shelfTrending {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 16px;
+  transform: initial;
+  justify-content: initial;
+}
+
+.slide--shelfTrending {
+  width: 100% !important;
+}
+
+.sliderArrows--shelfAlsoView,
+.sliderArrows--categorySlider,
+.sliderArrows--shelfPopular,
+.sliderArrows--shelfStyle1 {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #a3afbc;
+  background-color: #fff !important;
+  border-radius: 999px;
+  padding: 0;
+  text-align: center;
+}
+
+.sliderArrows--shelfAlsoView .caretIcon,
+.sliderArrows--shelfPopular .caretIcon,
+.sliderArrows--shelfStyle1 .caretIcon {
+  display: none;
+  opacity: 0;
+}
+
+.sliderRightArrow--shelfAlsoView,
+.sliderRightArrow--shelfPopular,
+.sliderRightArrow--shelfStyle1 {
+  border-color: #0067c7;
+}
+
+.sliderRightArrow--shelfAlsoView,
+.sliderRightArrow--shelfPopular,
+.sliderRightArrow--shelfStyle1,
+.sliderLeftArrow--shelfAlsoView,
+.sliderLeftArrow--shelfPopular,
+.sliderLeftArrow--shelfStyle1 {
+  background-repeat: no-repeat !important;
+}
+
+.sliderRightArrow--shelfAlsoView,
+.sliderRightArrow--shelfPopular,
+.sliderRightArrow--shelfStyle1 {
+  background-position: 11px center !important;
+  background-image: url("assets/icons/chevronRightBlue.svg") !important;
+}
+
+.sliderLeftArrow--shelfAlsoView,
+.sliderLeftArrow--shelfPopular,
+.sliderLeftArrow--shelfStyle1 {
+  background-position: 9px center !important;
+  background-image: url("assets/icons/chevronLeftBlue.svg") !important;
+}
+
+.sliderLayoutContainer--categorySlider {
+  padding: 0px 50px 28px;
+  margin-bottom: 24px;
+}
+
+.caretIcon--categorySlider {
+  height: 16px;
+  width: 12px;
+}
+
+/* END - Trending Shelf */
+
+@media (max-width: 64rem) {
+  .sliderLayoutContainer--categorySlider {
+    padding: 0px 42px 28px;
+  }
+
+  .paginationDotsContainer--shelfAlsoView {
+    bottom: 0;
+  }
+
+  .sliderLayoutContainer--shelfAlsoView,
+  .sliderLayoutContainer--bannersSlider {
+    margin-bottom: 32px;
+  }
+
+  .sliderLayoutContainer--shelfAlsoView,
+  .sliderLayoutContainer.sliderLayoutContainer--bannersSlider {
+    padding-bottom: 38px;
+  }
+
+  .sliderTrack--shelfTrending {
+    grid-template-columns: 1fr;
+    grid-row-gap: 8px;
+    grid-column-gap: initial;
+  }
+
+  .sliderTrack--shelfPopular {
+    overflow: hidden;
+    pointer-events: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .sliderTrack--shelfPopular .slide {
+    width: 100% !important;
+  }
+
+  .sliderLayoutContainer--stripeSlider {
+    padding-bottom: 0 !important;
+    background: #1b3255;
+    margin-top: 16px;
+    height: 40px;
+  }
+
+  .slide--shelfStyle1 {
+    max-width: 160px;
+  }
+}

@@ -1,0 +1,53 @@
+.emailInputContainer :global(.vtex-input-prefix__group) {
+  height: initial;
+  border: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.emailInputContainer :global(.vtex-styleguide-9-x-input) {
+  background: #fff;
+  border: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  color: var(--black-medium);
+  font-size: 1.25rem;
+  height: 3.5rem;
+  line-height: 1.2;
+}
+
+.emailInputContainer :global(.vtex-styleguide-9-x-input)::placeholder {
+  color: var(--black-medium);
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.formSubmitContainer :global(.vtex-button) {
+  background: #fff;
+  border: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  color: var(--fresh-blue);
+  height: 3.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.5;
+  padding: 0 1.5rem;
+  outline: none;
+}
+
+.formSubmitContainer :global(.vtex-button__label) {
+  padding: 0 !important;
+}
+
+@media (max-width: 64rem) {
+  .emailInputContainer :global(.vtex-styleguide-9-x-input)::placeholder,
+  .emailInputContainer :global(.vtex-styleguide-9-x-input) {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .formSubmitContainer :global(.vtex-button) {
+    font-size: 14px;
+  }
+}
