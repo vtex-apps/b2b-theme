@@ -1,6 +1,6 @@
 {
   "vendor": "vtex",
-  "name": "theme",
+  "name": "b2bstore",
   "version": "1.0.0",
   "defaultLocale": "en-US",
   "builders": {
