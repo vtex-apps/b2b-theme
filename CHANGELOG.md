@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.0.0] - 2021-04-09
+
 ## [4.12.6] - 2021-03-25
 ### Changed
 - Docs: Removed easy setup steps
