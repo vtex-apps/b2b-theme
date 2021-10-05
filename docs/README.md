@@ -1,137 +1,463 @@
-# B2B Store Theme
+# Installing the B2B Store Theme
 
-<!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=6 orderedList=false} -->
-
-<!-- code_chunk_output -->
-
-- [Prerequisites](#prerequisites)
-  - [Toolbelt](#toolbelt)
-  - [Change Store Edition](#change-store-edition)
-  - [Easy Setup App (Optional)](#easy-setup-app-optional)
-  - [Setup Search](#setup-search)
-    - [Setup Search Indexer](#setup-search-indexer)
-- [Theme](#theme)
-  - [Peer Dependencies](#peer-dependencies)
-  - [Setup Organizations Apps](#setup-organizations-apps)
-    - [Install Apps](#install-apps)
-    - [Update CL Entity](#update-cl-entity)
-  - [Setup Reviews and Ratings](#setup-reviews-and-ratings)
-- [Preview](#preview)
-
-<!-- /code_chunk_output -->
+B2B Store Theme is a front-end template to help your store get started with VTEX’s core features for businesses selling to other businesses.
 
 ## Prerequisites
 
-### Toolbelt
+### Set up your development environment
 
-Follow this [Developer Docs Guide](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-2-basicsetuptodevelopinvtexio) to setup **Toolbelt** and have access to CLI commands.
+Before starting with the B2B Store Theme setup itself, you must:
 
-### Change Store Edition
+1. [Set up a workspace to develop in VTEX IO](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-2-basicsetuptodevelopinvtexio) on your machine.
+2. Follow [these instructions](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-2-prerequesites) to make sure you meet all the prerequisites to develop using Store Framework.
+3. Make sure your store’s catalog is integrated with VTEX Intelligent Search, as described in [this article](https://help.vtex.com/en/tracks/vtex-intelligent-search--19wrbB7nEQcmwzDPl1l4Cb/6wKQgKmu2FT6084BJT7z5V).
 
-Follow the steps required to setup `vtex.edition-store@3.x` detailed in this [Developer Docs Guide](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-2-prerequesites#implementing-the-correct-edition-app)
 
-### Easy Setup App (Optional)
+### Install required B2B apps
 
-If you want to setup your environment with products, categories and other resources, take a look at [Easy Setup App](https://github.com/beightone/easy-setup)
+Now you must install the required apps listed below. They are mandatory for the B2B Store Theme to work properly.
 
-### Setup Search
+* [Wishlist](https://developers.vtex.com/vtex-developer-docs/docs/installing-the-b2b-store-theme#wishlist)
+* [Reviews and Ratings](https://developers.vtex.com/vtex-developer-docs/docs/installing-the-b2b-store-theme#reviews-and-ratings)
+* [Quick Order](https://developers.vtex.com/vtex-developer-docs/docs/installing-the-b2b-store-theme#quick-order)
+* [Location Availability](https://developers.vtex.com/vtex-developer-docs/docs/installing-the-b2b-store-theme#location-availability)
+* [Shopper Location](https://developers.vtex.com/vtex-developer-docs/docs/installing-the-b2b-store-theme#shopper-location)
+* [Order Quote](https://developers.vtex.com/vtex-developer-docs/docs/installing-the-b2b-store-theme#order-quote)
+* [Wordpress Integration](https://developers.vtex.com/vtex-developer-docs/docs/installing-the-b2b-store-theme#wordpress-integration)
+* [Admin Organizations](https://developers.vtex.com/vtex-developer-docs/docs/installing-the-b2b-store-theme#admin-organizations)
+* [Organizations](https://developers.vtex.com/vtex-developer-docs/docs/installing-the-b2b-store-theme#organizations)
 
-Follow the steps detailed in the section [Implementing the VTEX Intelligent Search](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-2-prerequesites#implementing-the-vtex-intelligent-search) of the Prerequisites for Store Framework development guide.
+#### Wishlist
 
-#### Setup Search Indexer
+[Wishlist](https://github.com/vtex-apps/wish-list) is an app that allows your store’s customers to bookmark their favorite products by clicking on a heart icon.
 
-Go to: **STORE SETUP** &rarr; **Search** &rarr; **Integration settings** (`https://{{account}}.myvtex.com/admin/search/integration-settings`) and click "Start Integration"
+To install this app on your store, run the following command on the CLI:
 
-![Screen Shot 2021-02-18 at 08.31.00](/assets/Screen%20Shot%202021-02-18%20at%2008.31.00.png)
-
-Wait until all the steps are completed.
-
-![Screen Shot 2021-02-18 at 08.32.31](/assets/Screen%20Shot%202021-02-18%20at%2008.32.31.png)
-
-## Theme
-
-### Peer Dependencies
-
-Install B2B Store Theme peer dependencies:
-
-```sh
-vtex install \
-    vtex.wish-list@1.x \
-    vtex.reviews-and-ratings@2.x \
-    vtex.quickorder@3.x \
-    vtex.location-availability@0.x \
-    vtex.shopper-location@0.x \
-    vtex.orderquote@1.x \
-    vtex.wordpress-integration@2.x
+```
+vtex install vtex.wish-list@1.x
 ```
 
-![Screen Shot 2021-02-25 at 09.48.10](/assets/Screen%20Shot%202021-02-25%20at%2009.48.10.png)
+#### Reviews and Ratings
 
-Accept all terms of use/service
+The [Reviews and ratings](https://github.com/vtex-apps/reviews-and-ratings) app enables your clients to submit reviews and ratings — using a star rating system — to your store’s products.
 
-![Screen Shot 2021-02-25 at 09.48.17](/assets/Screen%20Shot%202021-02-25%20at%2009.48.17.png)
+Install it using the command: 
 
-### Setup Organizations Apps
-
-#### Install Apps
-
-```sh
-vtex install \
-    vtex.admin-organizations@1.x \
-    vtex.organizations@1.x
+```
+vtex install vtex.reviews-and-ratings@2.x
 ```
 
-![Screen Shot 2021-02-25 at 09.56.25](/assets/Screen%20Shot%202021-02-25%20at%2009.56.25.png)
+After that, go to your store's Admin to proceed with the installation. 
 
-Go to: **ACCOUNT SETTINGS** &rarr; **Authorizations** &rarr; **All Permissions** (`https://{{account}}.myvtex.com/admin/authorization/permissions`)
+Once you are logged in, follow these steps:
 
-If you opted out to use [Easy Setup App](#easy-setup-app-optional) and selected `Organizations` resources you should have all Permissions and Roles already setup.
+1. Go to the **Account Settings** module.
+2. Click on `Apps`.
+3. Then, click on `My apps`. 
+4. Then, find the **Reviews and Ratings** app card and click on `Settings`. 
+5. It is recommended that you check the **Display stars in product-rating-summary if there are no reviews** option and uncheck the **Display total reviews number on product-rating-summary block** option, as illustrated below.
+6. Click on the `Save` button.
 
-![Screen Shot 2021-02-25 at 09.57.18](/assets/Screen%20Shot%202021-02-25%20at%2009.57.18.png)
+![Reviews and Ratings Settings](/assets/image1.png "Reviews and Ratings Settings")
 
-![Screen Shot 2021-02-25 at 09.57.26](/assets/Screen%20Shot%202021-02-25%20at%2009.57.26.png)
+#### Quick Order
 
-If not you can either run [Easy Setup App](#easy-setup-app-optional) selecting only `Organizations` resource to have it set everything up for you or follow the steps detailed in the [prerequisites instructions](https://github.com/vtex-apps/organizations#prerequisites) of `vtex.organizations` app.
+[Quick Order](https://github.com/vtex-apps/quickorder) is an app that enables customers to make bulk orders.
 
-#### Update CL Entity
+To install it, use the following command: 
 
-Follow the steps in [Changes to existing CL table
-](https://github.com/vtex-apps/organizations#changes-to-existing-cl-table) documentation to get everything working as expected.
+```
+ vtex install vtex.quickorder@3.x
+```
 
-Wait a few minutes for the changes to be indexed.
+#### Location Availability
 
-### Setup Reviews and Ratings
+The [Location Availability](https://github.com/vtex-apps/location-availability) app shows product availability and shipping information in the storefront based on the customer’s location, providing a personalized shopping experience.
 
-Go to **PRODUCTS** &rarr; **Catalog** &rarr; **Reviews** (`https://{{account}}.myvtex.com/admin/reviews-ratings/pending`);
+Install this app on your store using the `vtex.location-availability@0.x ` command.
 
-Click "Reviews Settings &rarr;" in the top right conrner.
 
-![Screen Shot 2021-02-25 at 10.12.49](/assets/Screen%20Shot%202021-02-25%20at%2010.12.49.png)
+#### Shopper Location
 
-Check "Display stars in product-rating-summary if there are no reviews"
+[Shopper Location](https://github.com/vtex-apps/shopper-location) is a geolocation app. Once it is installed, the app tracks the customer’s location, after permission is granted.
 
-Uncheck "Display total reviews number on product-rating-summary block"
+To install it, use the following command: 
 
-Click "Save"
 
-![Screen Shot 2021-02-18 at 10.15.38](/assets/Screen%20Shot%202021-02-18%20at%2010.15.38.png)
+```
+vtex install vtex.shopper-location@0.x
+```
 
-You should see a toast message saing: "Your data was submitted successfully."
+#### Order Quote
 
-![Screen Shot 2021-02-18 at 10.21.00](/assets/Screen%20Shot%202021-02-18%20at%2010.21.00.png)
+[Order Quote](https://github.com/vtex-apps/order-quote) is an app that allows the B2B customer to save a cart’s information and use it later for any order. 
 
-## Preview
+To install it, use the following command: 
 
-Click on the "VISIT STORE" on the top bar to preview your store.
+```
+vtex install vtex.orderquote@1.x
+```
 
-![Screen Shot 2021-02-25 at 10.18.28](/assets/Screen%20Shot%202021-02-25%20at%2010.18.28.png)
+#### Wordpress integration 
 
-You should see a fully working B2B Store Theme.
+The [Wordpress integration](https://github.com/vtex-apps/wordpress-integration) app enables the account admin to create content on your store’s front through Wordpress’ API.
 
-![Screen Shot 2021-02-25 at 10.21.04](/assets/Screen%20Shot%202021-02-25%20at%2010.21.04.png)
+To install this app, run the following command on the CLI:
 
-:warning: &nbsp;**Heads up!** If you're setting up the theme on a working environment (with previously setup resources) you have to map categories links in menus and across the theme and also map shelves queries to a working criteria in case you have multiple trade policies.
+```
+vtex install vtex.wordpress-integration@2.x
+```
 
-You now should have a fully working B2B Environment and B2B Store Theme setup and ready to be used.
+#### Admin Organizations
 
-That's it!
+In brief, the [Admin Organizations](https://github.com/vtex-apps/admin-organizations) app is responsible for managing the **Roles** and **Permissions** modules on your store’s Admin.
+
+To install it, run `vtex install vtex.admin-organizations@1.x `on the CLI.
+
+#### Organizations
+
+The [Organizations](https://github.com/vtex-apps/organizations) app allows you to create an organization — a business store — and manage users under that organization with different roles.
+
+Run the command `vtex install vtex.organizations@1.x ` to install it on your store.
+
+
+### Create fields in Master Data 
+
+After installing all the required apps, you need to create two new fields in Master Data: `isOrgAdmin` and `organizationId`. You must create these fields on the **Client** entity. To do so, check our step-by-step tutorial on [how to create a field on Master Data](https://help.vtex.com/en/tutorial/how-can-i-create-a-field-in-master-data--frequentlyAskedQuestions_1829).
+
+
+| **Field name**   | **Type**    |
+|------------------|-------------|
+| `isOrgAdmin`     | Boolean     |
+| `organizationId` | VarChar 100 |
+
+When creating the `isOrgAdmin` field, you should check the following checkboxes:
+
+* **Make readable without credential**
+* **Is searchable**
+* **Is filterable**
+
+When creating the `organizationId` field, you should check the following checkboxes:
+
+* **Is nullable**
+* **Make readable without credential**
+* **Allow editing without credential**
+* **Allow filter without credential**
+* **Is searchable**
+* **Is filterable**
+
+>⚠️ After creating the new fields, it is mandatory to Publish the CL entity and to Reindex it by clicking the buttons illustrated below. Otherwise, the B2B Store Theme will not be applied correctly.
+>
+> ![Publish and reindex](/assets/image2.png "Publish and reindex")
+
+### Install B2B Easy Setup (optional) 
+
+If you are setting up a new store, you can follow the instructions in [this guide](https://developers.vtex.com/vtex-rest-api/docs/installing-b2b-easy-set-up) to quickly set up a test store with sample data using the B2B Easy Setup app.
+
+> 🚨 We strongly advise that you do not run Easy Setup on a production environment. It will make irreversible changes and may delete some previous configurations on your store.
+
+### Create Master Data schemas
+
+If you have [installed B2B Easy Setup](https://developers.vtex.com/vtex-rest-api/docs/installing-b2b-easy-set-up) and selected **Organizations** resources, you can skip this step, because the required Master Data schemas will already have been created and you should have all **Permissions** and **Roles** ready.
+
+If you have opted not to install B2B Easy Setup, you need to use the **[Save schema by name](https://developers.vtex.com/vtex-rest-api/reference/schemas#saveschemabyname)** endpoint of the **Master Data API - V2 **to create the following schemas.
+
+* [`BusinessPermission schema`](https://developers.vtex.com/vtex-developer-docs/docs/installing-the-b2b-store-theme#businesspermission-schema)
+* [`BusinessRole schema`](https://developers.vtex.com/vtex-developer-docs/docs/installing-the-b2b-store-theme#businessrole-schema)
+* [`BusinessOrganization schema`](https://developers.vtex.com/vtex-developer-docs/docs/installing-the-b2b-store-theme#businessorganization-schema)
+* [`UserOrganization schema`](https://developers.vtex.com/vtex-developer-docs/docs/installing-the-b2b-store-theme#userorganization-schema)
+
+
+#### `BusinessPermission` schema
+
+| **Path param**   | **Value**    |
+|------------------|-------------|
+| `data_entity_name`| `BusinessPermission`     |
+| `schema_name` | `business-permission-schema-v1` |
+
+Request body:
+
+```json
+{
+	"properties": {
+		"name": {
+			"type": "string"
+		},
+		"label": {
+			"type": "string"
+		}
+	},
+	"v-default-fields": [
+		"name",
+		"label",
+		"id"
+	],
+	"required": [
+		"name"
+	],
+	"v-indexed": [
+		"name"
+	],
+	"v-security": {
+		"allowGetAll": true,
+		"publicRead": [
+			"name",
+			"label",
+			"id"
+		],
+		"publicWrite": [
+			"name",
+			"label"
+		],
+		"publicFilter": [
+			"name",
+			"id"
+		]
+	}
+}
+```
+
+#### `BusinessRole` schema
+
+
+| **Path param**   | **Value**    |
+|------------------|-------------|
+| `data_entity_name`| `BusinessRole`     |
+| `schema_name` | `business-role-schema-v1` |
+
+```json
+{
+	"properties": {
+		"name": {
+			"type": "string"
+		},
+		"label": {
+			"type": "string"
+		},
+		"permissions": {
+			"type": "string"
+		}
+	},
+	"definitions": {
+		"permission": {
+			"type": "string"
+		}
+	},
+	"v-default-fields": [
+		"name",
+		"label",
+		"id",
+		"permissions"
+	],
+	"required": [
+		"name"
+	],
+	"v-indexed": [
+		"name"
+	],
+	"v-security": {
+		"allowGetAll": true,
+		"publicRead": [
+			"name",
+			"label",
+			"permissions",
+			"id"
+		],
+		"publicWrite": [
+			"name",
+			"label",
+			"permissions"
+		],
+		"publicFilter": [
+			"name",
+			"id"
+		]
+	}
+}
+```
+
+#### `BusinessOrganization` schema
+
+
+| **Path param**   | **Value**    |
+|------------------|-------------|
+| `data_entity_name`| `BusinessOrganization`  |
+| `schema_name` | `business-organization-schema-v1` |
+
+```json
+{
+	"properties": {
+		"name": {
+			"type": "string"
+		},
+		"telephone": {
+			"type": "string"
+		},
+		"address": {
+			"type": "string"
+		},
+		"email": {
+			"type": "string"
+		}
+	},
+	"v-default-fields": [
+		"name",
+		"telephone",
+		"id",
+		"address",
+		"email"
+	],
+	"required": [
+		"name",
+		"telephone"
+	],
+	"v-indexed": [
+		"name",
+		"telephone",
+		"email"
+	],
+	"v-security": {
+		"allowGetAll": true,
+		"publicRead": [
+			"name",
+			"telephone",
+			"id",
+			"address",
+			"email"
+		],
+		"publicWrite": [
+			"name",
+			"telephone",
+			"address",
+			"email"
+		],
+		"publicFilter": [
+			"name",
+			"telephone",
+			"id",
+			"email"
+		]
+	}
+}
+```
+
+#### `UserOrganization` schema
+
+| **Path param**   | **Value**    |
+|------------------|-------------|
+| `data_entity_name`| `UserOrganization`  |
+| `schema_name` | `user-organization-schema-v1` |
+
+```json
+{
+	"properties": {
+		"email": {
+			"type": "string"
+		},
+		"businessOrganizationId": {
+			"type": "string",
+			"link": "http://api.vtex.com/{{accountName}}/dataentities/BusinessOrganization/schemas/business-organization-schema-v1"
+		},
+		"roleId": {
+			"type": "string",
+			"link": "http://api.vtex.com/{{accountName}}/dataentities/BusinessRole/schemas/business-role-schema-v1"
+		},
+		"status": {
+			"type": "string"
+		}
+	},
+	"v-default-fields": [
+		"email",
+		"id",
+		"businessOrganizationId",
+		"roleId",
+		"status"
+	],
+	"required": [
+		"email",
+		"businessOrganizationId",
+		"roleId",
+		"status"
+	],
+	"v-indexed": [
+		"email",
+		"businessOrganizationId",
+		"roleId",
+		"status"
+	],
+	"v-security": {
+		"allowGetAll": true,
+		"publicRead": [
+			"email",
+			"id",
+			"businessOrganizationId",
+			"businessOrganizationId_linked",
+			"roleId",
+			"roleId_linked",
+			"status"
+		],
+		"publicWrite": [
+			"id",
+			"email",
+			"businessOrganizationId",
+			"roleId",
+			"status"
+		],
+		"publicFilter": [
+			"email",
+			"id",
+			"businessOrganizationId",
+			"roleId",
+			"status"
+		]
+	},
+	"v-triggers": [
+		{
+			"name": "organization-assignment-accept-email",
+			"active": true,
+			"condition": "status=APPROVED",
+			"action": {
+				"type": "email",
+				"provider": "default",
+				"subject": "Organization Assignment Acceptance",
+				"to": [
+					"{!email}"
+				],
+				"replyTo": "noreply@company.com",
+				"body": "You have been assigned to {!businessOrganizationId_linked.name}."
+			}
+		},
+		{
+			"name": "organization-assignment-decline-email",
+			"active": true,
+			"condition": "status=DECLINED",
+			"action": {
+				"type": "email",
+				"provider": "default",
+				"subject": "Organization Assignment Decline",
+				"to": [
+					"{!email}"
+				],
+				"replyTo": "noreply@company.com",
+				"body": "You have left the organization {!businessOrganizationId_linked.name}."
+			}
+		}
+	]
+}
+```
+
+## Installation
+
+After following the steps above, you are ready to install the B2B Store Theme. You must:
+
+1. Run the `vtex install vtex.b2bstore@1.x `command on the CLI.
+2. Run the `vtex browse` command to see the B2B Store Theme on your browser.
+
+Finally, your storefront should look like this:
+
+![B2B Store Theme](/assets/image3.png "B2B Store Theme")
+
+## Customization
+
+After installing the B2B Store Theme, you can customize it according to your store’s business needs. Check our guide on [Customizing the B2B Store Theme](https://developers.vtex.com/vtex-developer-docs/docs/customizing-the-b2b-store-theme) for more information.
+
