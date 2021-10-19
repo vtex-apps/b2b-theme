@@ -42,6 +42,7 @@
       "flex-layout.col#logo-desktop",
       "flex-layout.col#search-bar",
       "login",
+      "b2b-supplier.signup-button",
       "minicart.v2"
     ]
   },
@@ -169,7 +170,7 @@
   },
 
   "flex-layout.row#mobile": {
-    "children": ["drawer", "logo", "challenge-block#login", "minicart.v2"],
+    "children": ["drawer", "logo", "challenge-block#login",  "b2b-supplier.signup-button", "minicart.v2"],
     "props": {
       "preventHorizontalStretch": true,
       "preserveLayoutOnMobile": true,
@@ -214,6 +215,12 @@
       "iconLabel": "Hello, Sign in"
     }
   },
+
+   "b2b-supplier.signup-button": {
+      "props": {
+        "iconLabel": "Sign up"
+      }
+    },
 
   "login#mobile": {
     "props": {

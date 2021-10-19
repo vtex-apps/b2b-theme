@@ -1,0 +1,30 @@
+.container :global(.vtex-button) {
+  width: 176px;
+  height: 48px;
+}
+
+.container :global(.vtex-button__label) {
+  padding: 0 0 0 0;
+}
+
+.label {
+  color: #fff;
+  text-transform: initial;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.profile {
+  color: #fff;
+}
+
+.sendButton :global(.vtex-button) {
+  background: #214d8e;
+  border: none;
+}
+
+@media (max-width: 64rem) {
+  .container :global(.vtex-button) {
+    display: none;
+  }
+}
