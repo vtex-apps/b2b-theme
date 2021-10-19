@@ -26,7 +26,7 @@ Now you must install the required apps listed below. They are mandatory for the 
 * [Wordpress Integration](https://developers.vtex.com/vtex-developer-docs/docs/installing-the-b2b-store-theme#wordpress-integration)
 * [Admin Organizations](https://developers.vtex.com/vtex-developer-docs/docs/installing-the-b2b-store-theme#admin-organizations)
 * [Organizations](https://developers.vtex.com/vtex-developer-docs/docs/installing-the-b2b-store-theme#organizations)
-
+* [Buyer Organization Supplier](https://github.com/vtex-apps/buyer-org-supplier)
 #### Wishlist
 
 [Wishlist](https://github.com/vtex-apps/wish-list) is an app that allows your store’s customers to bookmark their favorite products by clicking on a heart icon.
@@ -106,6 +106,16 @@ To install this app, run the following command on the CLI:
 
 ```
 vtex install vtex.wordpress-integration@2.x
+```
+
+#### Buyer Organization Supplier
+
+The [Buyer Organization Supplier](https://github.com/vtex-apps/buyer-org-supplier) app enables the creation of buyer organizations in your store. You can use this app as default or use it as reference to create your own.
+
+To install this app, run the following command on the CLI:
+
+```
+vtex install vtex.buyer-org-supplier@2.x
 ```
 
 #### Admin Organizations
