@@ -15,7 +15,6 @@
   "flex-layout.col#menu-header": {
     "children": [
       "login#drawer",
-       "b2b-supplier.signup-button",
       // Deprecated
       // "locale-switcher#drawer",
       "rich-text#explore",
