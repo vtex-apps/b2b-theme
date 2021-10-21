@@ -4,6 +4,7 @@
   },
   "responsive-layout.desktop": {
     "children": [
+      "b2b-supplier.approved-status",
       "flex-layout.row#imageList",
       "flex-layout.row#shopByCategory",
       // Deprecated
