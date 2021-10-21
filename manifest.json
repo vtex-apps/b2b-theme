@@ -22,7 +22,6 @@
     "vtex.wordpress-integration": "2.x"
   },
   "dependencies": {
-    "vtex.b2b-supplier": "2.x",
     "vtex.store": "2.x",
     "vtex.store-header": "2.x",
     "vtex.product-summary": "2.x",
