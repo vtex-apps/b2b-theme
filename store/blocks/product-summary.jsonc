@@ -8,11 +8,11 @@
       "product-summary-brand",
       "product-summary-name",
       "product-rating-summary",
-      "challenge-permission#product-summary-price",
-      "challenge-permission#product-summary-buy-button",
+      "check-permission#product-summary-price",
+      "check-permission#product-summary-buy-button",
       "add-to-list-btn",
       "modal-trigger#quickview",
-      "challenge-permission#product-comparison-block"
+      "check-permission#product-comparison-block"
     ]
   },
   "product-summary.shelf#complete": {
@@ -24,8 +24,8 @@
       "product-summary-brand",
       "product-summary-name",
       "product-rating-summary",
-      "challenge-permission#product-summary-price",
-      "challenge-permission#product-summary-buy-button",
+      "check-permission#product-summary-price",
+      "check-permission#product-summary-buy-button",
       "add-to-list-btn",
       "modal-trigger#quickview"
     ]
@@ -89,12 +89,21 @@
     }
   },
 
-  "challenge-permission#product-summary-buy-button": {
-    "blocks": ["allowed-content#product-summary-buy-button"],
+  "check-permission#product-summary-buy-button": {
     "props": {
-      "permissions": [{ "name": "view_prices" }]
-    }
+      "roles": [
+        "store-admin",
+        "sales-admin",
+        "sales-manager",
+        "sales-representative",
+        "customer-admin",
+        "customer-approver",
+        "customer-buyer"
+      ]
+    },
+    "blocks": ["allowed-content#product-summary-buy-button"]
   },
+
   "allowed-content#product-summary-buy-button": {
     "children": ["flex-layout.row#product-summary-buy-button"]
   },
@@ -135,7 +144,7 @@
       "product-summary-brand",
       "product-summary-name",
       "product-rating-summary",
-      "challenge-permission#product-summary-price"
+      "check-permission#product-summary-price"
     ],
     "props": {
       "preventVerticalStretch": true
@@ -164,7 +173,7 @@
     "children": [
       "product-summary-name#trending",
       "product-rating-summary",
-      "challenge-permission#product-summary-price",
+      "check-permission#product-summary-price",
       "product-availability"
     ]
   },
@@ -198,7 +207,7 @@
     "children": [
       "product-summary-image",
       "product-rating-summary",
-      "challenge-permission#product-summary-price"
+      "check-permission#product-summary-price"
     ],
     "props": {
       "blockClass": "minimumSummary"
@@ -210,12 +219,21 @@
     }
   },
 
-  "challenge-permission#product-comparison-block": {
-    "blocks": ["allowed-content#product-comparison-block"],
+  "check-permission#product-comparison-block": {
     "props": {
-      "permissions": [{ "name": "view_prices" }]
-    }
+      "roles": [
+        "store-admin",
+        "sales-admin",
+        "sales-manager",
+        "sales-representative",
+        "customer-admin",
+        "customer-approver",
+        "customer-buyer"
+      ]
+    },
+    "blocks": ["allowed-content#product-comparison-block"]
   },
+
   "allowed-content#product-comparison-block": {
     "children": ["product-comparison-block.selector"]
   }

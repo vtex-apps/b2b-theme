@@ -70,7 +70,7 @@
       "rich-text#headStripe4",
       "rich-text#headStripe5",
       "flex-layout.col#spacer",
-      "challenge-block#reseller"
+      "check-permission#reseller"
     ]
   },
 
@@ -169,7 +169,7 @@
   },
 
   "flex-layout.row#mobile": {
-    "children": ["drawer", "logo", "challenge-block#login", "minicart.v2"],
+    "children": ["drawer", "logo", "check-permission#login", "minicart.v2"],
     "props": {
       "preventHorizontalStretch": true,
       "preserveLayoutOnMobile": true,
@@ -180,8 +180,8 @@
 
   "link#orderQuote": {
     "props": {
-      "label": "Order quote",
-      "href": "/orderquote",
+      "label": "My Quotes",
+      "href": "/b2b-quotes",
       "blockClass": "orderQuote"
     }
   },

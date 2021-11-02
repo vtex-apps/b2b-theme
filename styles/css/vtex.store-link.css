@@ -154,6 +154,29 @@
   top: 50%;
   transform: translate(-50%, -50%);
 }
+.link--order-quote {
+	margin: 0 16px 16px;
+  width: 92%;
+  padding: 13px 0;
+  font-size: 18px;
+}
+
+.link--menu-order-quote {
+	text-decoration: none;
+	font-size: 16px;
+	line-height: 44px;
+	font-family: Roboto;
+	color: rgb(113, 119, 134);
+  font-size: 20px;
+  line-height: 28px;
+  color: #000;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
 
 .link--orderQuote,
 .link--resellerLink {

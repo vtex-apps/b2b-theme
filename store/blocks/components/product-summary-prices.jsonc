@@ -1,12 +1,20 @@
 {
-  "challenge-permission#product-summary-price": {
-    "blocks": [
-      "allowed-content#product-summary-price",
-      "disallowed-content#product-summary-price"
-    ],
+  "check-permission#product-summary-price": {
     "props": {
-      "permissions": [{ "name": "view_prices" }]
-    }
+      "roles": [
+        "store-admin",
+        "sales-admin",
+        "sales-manager",
+        "sales-representative",
+        "customer-admin",
+        "customer-approver",
+        "customer-buyer"
+      ]
+    },
+    "blocks": [
+      "allowed-content#product-price",
+      "disallowed-content#product-price"
+    ]
   },
   "allowed-content#product-summary-price": {
     "children": ["product-summary-price"]

@@ -19,7 +19,8 @@
       // "locale-switcher#drawer",
       "rich-text#explore",
       "menu#drawer",
-      "flex-layout.row#quickOrder"
+      "flex-layout.row#quickOrder",
+      "flex-layout.row#OrderQuote"
     ],
     "props": {
       "blockClass": "drawerInnerCol"
@@ -33,13 +34,16 @@
   // },
   "link#reseller": {
     "props": {
-      "label": "Become a seller",
-      "href": "/registration",
+      "label": "Organization Signup",
+      "href": "/organization-request",
       "blockClass": "resellerLink"
     }
   },
   "flex-layout.row#quickOrder": {
     "children": ["link#quickOrder"]
+  },
+  "flex-layout.row#OrderQuote": {
+    "children": ["link#menu-order-quote"]
   },
   "link#quickOrder": {
     "children": ["rich-text#quickTitle", "rich-text#quickText"],
@@ -58,6 +62,13 @@
     "props": {
       "text": "Shop products with a few clicks",
       "blockClass": "quickText"
+    }
+  },
+  "link#menu-order-quote": {
+    "props": {
+      "label": "My Quotes",
+      "href": "/b2b-quotes",
+      "blockClass": "menu-order-quote"
     }
   },
   "login#drawer": {

@@ -18,7 +18,7 @@
     "vtex.quickorder": "3.x",
     "vtex.location-availability": "0.x",
     "vtex.shopper-location": "0.x",
-    "vtex.orderquote": "1.x",
+    "vtex.storefront-permissions-ui": "0.x",
     "vtex.wordpress-integration": "2.x"
   },
   "dependencies": {
@@ -76,10 +76,7 @@
     "vtex.disclosure-layout": "1.x",
     "vtex.modal": "0.x",
     "vtex.store-form": "0.x",
-    "vtex.challenge-tp-condition": "0.x",
-    "vtex.auth-challenge": "1.x",
     "vtex.sku-list": "1.x",
-    "vtex.organizations-challenge": "1.x",
     "vtex.condition-layout": "2.x",
     "vtex.seller-selector": "0.x",
     "vtex.store-newsletter": "1.x"

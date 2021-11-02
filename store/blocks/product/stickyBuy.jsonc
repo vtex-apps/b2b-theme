@@ -1,9 +1,19 @@
 {
-  "challenge-permission#sticky-buy": {
-    "blocks": ["allowed-content#sticky-buy"],
+  "check-permission#sticky-buy": {
     "props": {
-      "permissions": [{ "name": "view_prices" }]
-    }
+      "roles": [
+        "store-admin",
+        "sales-admin",
+        "sales-manager",
+        "sales-representative",
+        "customer-admin",
+        "customer-approver",
+        "customer-buyer"
+      ]
+    },
+    "blocks": [
+      "allowed-content#sticky-buy"
+    ]
   },
   "allowed-content#sticky-buy": {
     "children": ["sticky-layout#stickyBuy"]

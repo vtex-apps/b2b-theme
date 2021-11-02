@@ -3,10 +3,7 @@
     "blocks": [
       "responsive-layout.mobile#quickorder",
       "responsive-layout.desktop#quickorder"
-    ],
-    "parent": {
-      "challenge": "challenge.profile"
-    }
+    ]
   },
 
   "responsive-layout.desktop#quickorder": {

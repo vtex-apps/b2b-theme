@@ -20,7 +20,7 @@
       "flex-layout.row#description-and-gallery",
       "flex-layout.row#features",
       "flex-layout.row#specification",
-      "challenge-permission#sticky-buy",
+      "check-permission#sticky-buy",
       "flex-layout.row#reviews-and-ratings",
       "flex-layout.row#alsoView"
     ]

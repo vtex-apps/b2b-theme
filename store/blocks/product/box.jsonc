@@ -21,22 +21,29 @@
     "children": [
       "flex-layout.row#fake-summary",
       "flex-layout.row#seller-name",
-      "challenge-permission#product-price"
+      "check-permission#product-price"
     ],
     "props": {
       "blockClass": ["box"],
       "preventVerticalStretch": true
     }
   },
-
-  "challenge-permission#product-price": {
+  "check-permission#product-price": {
+    "props": {
+      "roles": [
+        "store-admin",
+        "sales-admin",
+        "sales-manager",
+        "sales-representative",
+        "customer-admin",
+        "customer-approver",
+        "customer-buyer"
+      ]
+    },
     "blocks": [
       "allowed-content#product-price",
       "disallowed-content#product-price"
-    ],
-    "props": {
-      "permissions": [{ "name": "view_prices" }]
-    }
+    ]
   },
   "allowed-content#product-price": {
     "children": [

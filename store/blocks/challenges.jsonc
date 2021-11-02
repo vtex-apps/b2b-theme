@@ -1,17 +1,22 @@
 {
-  "challenge.trade-policy-condition": {
+  "check-permission#reseller": {
     "props": {
-      "redirectPath": "/login",
-      "forbiddenRedirectPath": "/not-allowed"
-    }
-  },
-  "challenge-block#reseller": {
+      "roles": [
+        "store-admin",
+        "sales-admin",
+        "sales-manager",
+        "sales-representative",
+        "customer-admin",
+        "customer-approver",
+        "customer-buyer"
+      ]
+    },
     "blocks": [
-      "challenge-content#reseller",
-      "challenge-fallback#reseller"
+      "allowed-content#reseller",
+      "disallowed-content#reseller"
     ]
   },
-  "challenge-content#reseller": {
+  "allowed-content#reseller": {
     "children": [
       "link#orderQuote"
     ],
@@ -19,7 +24,7 @@
       "blockClass": "resellerChallengeContent"
     }
   },
-  "challenge-fallback#reseller": {
+  "disallowed-content#reseller": {
     "children": [
       "link#reseller"
     ],
@@ -27,13 +32,24 @@
       "blockClass": "resellerChallengeFallback"
     }
   },
-  "challenge-block#login": {
+  "check-permission#login": {
+    "props": {
+      "roles": [
+        "store-admin",
+        "sales-admin",
+        "sales-manager",
+        "sales-representative",
+        "customer-admin",
+        "customer-approver",
+        "customer-buyer"
+      ]
+    },
     "blocks": [
-      "challenge-content#login",
-      "challenge-fallback#login"
+      "allowed-content#reseller",
+      "disallowed-content#reseller"
     ]
   },
-  "challenge-content#login": {
+  "allowed-content#login": {
     "children": [
       "link#profile"
     ],
@@ -41,7 +57,7 @@
       "blockClass": "loginChallengeContent"
     }
   },
-  "challenge-fallback#login": {
+  "disallowed-content#login": {
     "children": [
       "login#mobile"
     ],
