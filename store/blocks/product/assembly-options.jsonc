@@ -53,7 +53,7 @@
   "flex-layout.col#product-assembly-middle": {
     "props": {
       "width": "grow",
-      "verticalAlignment": "middle"
+      "verticalAlign": "middle"
     },
     "children": [
       "assembly-option-item-name",
@@ -91,7 +91,7 @@
   "flex-layout.col#item-customize-middle": {
     "props": {
       "width": "grow",
-      "verticalAlignment": "middle"
+      "verticalAlign": "middle"
     },
     "children": [
       "assembly-option-item-name",
