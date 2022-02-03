@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [2.0.2] - 2022-02-03
+
 ### Fixed
 
 - Added `!` to beginning of anonymous function at the top of `checkout6-custom.js` to ensure it can work in conjunction with other apps that inject checkout JS
