@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [2.1.0] - 2022-04-25
+
 ### Added
 - `seller-selector-custom` to PDP
 ## [2.0.2] - 2022-02-03
