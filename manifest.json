@@ -79,6 +79,7 @@
     "vtex.sku-list": "1.x",
     "vtex.condition-layout": "2.x",
     "vtex.seller-selector": "0.x",
+    "b2bstoreqa.seller-selector-custom": "0.x",
     "vtex.store-newsletter": "1.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"

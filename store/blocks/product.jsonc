@@ -17,6 +17,7 @@
       "flex-layout.row#divider",
       "flex-layout.row#box",
       "product-kit#buy-together",
+      "flex-layout.row#seller-selector-custom",
       "flex-layout.row#description-and-gallery",
       "flex-layout.row#features",
       "flex-layout.row#specification",
@@ -25,11 +26,38 @@
       "flex-layout.row#alsoView"
     ]
   },
+  "flex-layout.row#seller-selector-custom": {
+    "props": {
+      "blockClass": ["seller-selector-custom"]
+    },
+    "children": ["seller-selector-custom"]
+  },
   "responsive-layout.desktop#product": {
     "children": ["flex-layout.row#product", "flex-layout.row#alsoView"]
   },
   "flex-layout.row#product": {
     "children": ["flex-layout.col#product"]
+  },
+  "check-permission#seller-selector-custom": {
+    "props": {
+      "roles": [
+        "store-admin",
+        "sales-admin",
+        "sales-manager",
+        "sales-representative",
+        "customer-admin",
+        "customer-approver",
+        "customer-buyer"
+      ]
+    },
+    "blocks": [
+      "allowed-content#seller-selector-custom"
+    ]
+  },
+  "allowed-content#seller-selector-custom": {
+    "children": [
+      "flex-layout.row#seller-selector-custom"
+    ]
   },
   "flex-layout.col#product": {
     "children": [
@@ -37,6 +65,7 @@
       "flex-layout.row#product-details",
       "product-kit#buy-together", // This block won't work if it's not a direct children of store.product
       "flex-layout.row#description-and-gallery",
+      "check-permission#seller-selector-custom",
       "flex-layout.row#features",
       "flex-layout.row#specification",
       "flex-layout.row#reviews-and-ratings"
