@@ -18,7 +18,6 @@
     "vtex.quickorder": "3.x",
     "vtex.location-availability": "0.x",
     "vtex.shopper-location": "0.x",
-    "vtex.storefront-permissions-ui": "0.x",
     "vtex.wordpress-integration": "2.x"
   },
   "dependencies": {
@@ -79,8 +78,10 @@
     "vtex.sku-list": "1.x",
     "vtex.condition-layout": "2.x",
     "vtex.seller-selector": "0.x",
-    "b2bstoreqa.seller-selector-custom": "0.x",
-    "vtex.store-newsletter": "1.x"
+    "vtex.store-newsletter": "1.x",
+    "vtex.storefront-permissions-ui": "1.x",
+    "vtex.b2b-quotes": "1.x",
+    "vtex.b2b-organizations": "1.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

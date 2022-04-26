@@ -7,10 +7,23 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Added
+
+- `vtex.storefront-permissions-ui@1.x` dependency
+- `vtex.b2b-quotes` dependency and `quotes-locking-modal` block
+- `vtex.b2b-organizations` dependency and `b2b-user-widget` block
+
+### Removed
+
+- `b2bstoreqa.seller-selector-custom` dependency and blocks
+- `vtex.storefront-permissions-ui@0.x` peer dependency
+
 ## [2.1.0] - 2022-04-25
 
 ### Added
+
 - `seller-selector-custom` to PDP
+
 ## [2.0.2] - 2022-02-03
 
 ### Fixed

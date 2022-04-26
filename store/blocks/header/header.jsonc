@@ -17,8 +17,10 @@
     },
     "children": [
       "flex-layout.row#telemarketing",
+      "flex-layout.row#organization",
       "flex-layout.row#desktop",
-      "flex-layout.row#headerStripe"
+      "flex-layout.row#headerStripe",
+      "quotes-locking-modal"
     ]
   },
 
@@ -26,6 +28,14 @@
     "children": ["telemarketing"],
     "props": {
       "blockClass": ["bg-blue-medium"],
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.row#organization": {
+    "children": ["b2b-user-widget"],
+    "props": {
+      "blockClass": ["bg-fresh-blue-lightest"],
       "fullWidth": true
     }
   },
@@ -130,7 +140,11 @@
   },
 
   "sticky-layout#mobile": {
-    "children": ["flex-layout.row#mobileHeader", "slider-layout#menuLinks"],
+    "children": [
+      "flex-layout.row#mobileHeader",
+      "slider-layout#menuLinks",
+      "quotes-locking-modal"
+    ],
     "props": {
       "blockClass": "headerMobile"
     }
