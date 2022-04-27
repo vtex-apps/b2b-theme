@@ -1,7 +1,7 @@
 {
   "vendor": "b2bstoreqa",
   "name": "b2bstore",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "defaultLocale": "en-US",
   "builders": {
     "assets": "0.x",
