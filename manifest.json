@@ -1,5 +1,5 @@
 {
-  "vendor": "vtex",
+  "vendor": "b2bstoreqa",
   "name": "b2bstore",
   "version": "3.0.0",
   "defaultLocale": "en-US",
@@ -81,7 +81,8 @@
     "vtex.store-newsletter": "1.x",
     "vtex.storefront-permissions-ui": "1.x",
     "vtex.b2b-quotes": "1.x",
-    "vtex.b2b-organizations": "1.x"
+    "vtex.b2b-organizations": "1.x",
+    "b2bstoreqa.seller-selector-custom": "0.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
