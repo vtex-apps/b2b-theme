@@ -18,7 +18,8 @@
     "vtex.quickorder": "3.x",
     "vtex.location-availability": "0.x",
     "vtex.shopper-location": "0.x",
-    "vtex.wordpress-integration": "2.x"
+    "vtex.wordpress-integration": "2.x",
+    "vtexarg.speech-to-text": "1.x"
   },
   "dependencies": {
     "vtex.store": "2.x",

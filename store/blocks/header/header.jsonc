@@ -51,11 +51,16 @@
       "drawer",
       "flex-layout.col#logo-desktop",
       "flex-layout.col#search-bar",
+      "flex-layout.col#text-speech",
       "login",
       "minicart.v2"
     ]
   },
-
+  "flex-layout.col#text-speech": {
+    "children": [
+      "speech-to-text"
+    ]
+  },
   "flex-layout.col#search-bar": {
     "children": ["search-bar"],
     "props": {
@@ -63,7 +68,14 @@
       "width": "grow"
     }
   },
-
+  "speech-to-text": {
+    "props": {
+      "lang": "en-US",
+      "iconHeight": "20px",
+      "iconWidth": "20px",
+      "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Font_Awesome_5_solid_microphone.svg"
+    }
+  },
   "flex-layout.row#headerStripe": {
     "props": {
       "blockClass": "headerStripe",
