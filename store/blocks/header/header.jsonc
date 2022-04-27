@@ -35,7 +35,7 @@
   "flex-layout.row#organization": {
     "children": ["b2b-user-widget"],
     "props": {
-      "blockClass": ["bg-fresh-blue-lightest"],
+      "blockClass": ["bg-blue-medium"],
       "fullWidth": true
     }
   },
