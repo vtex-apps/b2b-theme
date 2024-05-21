@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: b2b-newstore-theme
+  annotations:
+    github.com/project-slug: vtex-apps/b2b-newstore-theme
+spec:
+  type: other
+  lifecycle: unknown
+  owner: b-2-b-enabler
