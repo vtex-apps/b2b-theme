@@ -5,6 +5,7 @@ metadata:
   annotations:
     github.com/project-slug: vtex-apps/b2b-newstore-theme
 spec:
-  type: other
-  lifecycle: unknown
+  system: b2b-suite
+  type: frontend-ui
+  lifecycle: maintenance
   owner: b-2-b-enabler
