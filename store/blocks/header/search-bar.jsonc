@@ -12,7 +12,7 @@
       "product-summary.shelf#searchBar"
     ],
     "props": {
-      "simulationBehavior": "skip",
+      "simulationBehavior": "default",
       "maxSuggestedProducts": 6,
       "customBreakpoints": {
         "md": {
@@ -26,7 +26,7 @@
       "product-summary.shelf#searchBarMobile"
     ],
     "props": {
-      "simulationBehavior": "skip",
+      "simulationBehavior": "default",
       "maxSuggestedProducts": 6,
       "autocompleteWidth": 92
     }
