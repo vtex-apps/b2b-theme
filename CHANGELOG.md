@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Added
+
+- Change simulation behavior to `default` on custom product-comparison queries
+
 ## [3.0.0] - 2022-04-26
 
 ### Added

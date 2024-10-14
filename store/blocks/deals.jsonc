@@ -13,7 +13,7 @@
         "hideUnavailableItems": true,
         "maxItemsPerPage": 10,
         "skusFilter": "ALL",
-        "simulationBehavior": "skip"
+        "simulationBehavior": "default"
       }
     },
     "blocks": [
