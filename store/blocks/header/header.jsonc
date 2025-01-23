@@ -22,7 +22,7 @@
     },
     "children": [
       "flex-layout.row#telemarketing",
-      "flex-layout.row#pendingOrgAlert",
+      //"flex-layout.row#pendingOrgAlert",
       "flex-layout.row#organization",
       "flex-layout.row#desktop",
       "flex-layout.row#headerStripe",
