@@ -5,6 +5,7 @@ metadata:
   annotations:
     github.com/project-slug: vtex-apps/b2b-newstore-theme
     backstage.io/techdocs-ref: dir:./
+    vtex.com/application-id: TIL0JR6E
 spec:
   system: b2b-suite
   type: frontend-ui
