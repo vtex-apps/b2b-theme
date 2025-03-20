@@ -10,4 +10,4 @@ spec:
   system: b2b-suite
   type: frontend-ui
   lifecycle: maintenance
-  owner: b-2-b-enabler
+  owner: te-0010
