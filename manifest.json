@@ -79,9 +79,9 @@
     "vtex.condition-layout": "2.x",
     "vtex.seller-selector": "0.x",
     "vtex.store-newsletter": "1.x",
-    "vtex.storefront-permissions-ui": "1.x",
-    "vtex.b2b-quotes": "1.x",
-    "vtex.b2b-organizations": "1.x"
+    "vtex.storefront-permissions-ui": "2.x",
+    "vtex.b2b-quotes": "2.x",
+    "vtex.b2b-organizations": "2.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
