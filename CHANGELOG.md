@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [4.0.0] - 2025-05-27
+
 ### Changed
 - Update dependency major version. If you are updating to this major version, make sure to update the following apps (if you have then installed) to the following major versions:
     - vtex.b2b-admin-customers@1.x

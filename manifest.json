@@ -1,7 +1,7 @@
 {
   "vendor": "vtex",
   "name": "b2bstore",
-  "version": "3.0.4",
+  "version": "4.0.0",
   "defaultLocale": "en-US",
   "builders": {
     "assets": "0.x",
